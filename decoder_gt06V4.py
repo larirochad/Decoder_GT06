@@ -2,9 +2,13 @@
 from recordMessages import * 
 
 def decode_course_info(course_hex):
+    course_MSB = int(course_hex[0:2], 16)
+    course_LSB = int(course_hex[2:4], 16)
+
+    msb_bin = bin(course_MSB)[2:].zfill(8)  # Binário com 8 bits
+    lsb_bin = bin(course_LSB)[2:].zfill(8)  # Binário com 8 bits
+
     """
-    Decodifica as informações do campo course (2 bytes = 16 bits)
-    
     Baseado no protocolo GT06V4 oficial:
     BYTE_1 (bits 15-8):
     - Bit 7: 0 (reservado)
@@ -17,17 +21,16 @@ def decode_course_info(course_hex):
     
     BYTE_2 (bits 7-0): Course bits baixos (0-360°)
     """
-    course_int = int(course_hex, 16)
-    course_bin = bin(course_int)[2:].zfill(16)  # Binário com 16 bits
-    
+    course_bin = msb_bin + lsb_bin  # Concatena os dois bytes em binário
+    # print(f"course_bin: {course_bin}")  # Debug: Exibe o binário completo
     # BYTE_1 (bits 15-8) - primeiro byte
-    realtime_gps = int(course_bin[10])      # Bit 5 (0=realtime, 1=differential)
-    gps_posicionado = int(course_bin[11])   # Bit 4 (1=positioned, 0=not positioned)
-    longitude_leste = int(course_bin[12])   # Bit 3 (0=East/+, 1=West/-)
-    latitude_norte = int(course_bin[13])    # Bit 2 (0=South/-, 1=North/+)
-    
-    # Course/Azimute: 10 bits (bits 1-0 do BYTE_1 + 8 bits do BYTE_2)
-    course_bits = course_bin[14:16] + course_bin[8:16]  # 2 bits altos + 8 bits baixos
+    realtime_gps = int(course_bin[2])      # Bit 5 ✔️
+    gps_posicionado = int(course_bin[3])   # Bit 4 ✔️
+    longitude_leste = int(course_bin[4])   # Bit 3 ✔️
+    latitude_norte = int(course_bin[5])    # Bit 2 ✔️
+
+    course_bits =   course_bin[6:16]  
+    # print(f"azimulth em bin: {course_bits}")  # Debug: Exibe os bits do curso
     azimute = int(course_bits, 2)  # Conversão direta para graus (0-360°)
     
     return {
@@ -113,6 +116,7 @@ def parser_gt06V4(hex_data, imei=None):
             p += 2
             
             course = hex_data[p:p+4]
+            print(f"course: {course}")
             course_info = decode_course_info(course)
             
             latitude, longitude = apply_coordinate_signs(latitude, longitude, course_info)
@@ -124,11 +128,11 @@ def parser_gt06V4(hex_data, imei=None):
             p += 2
             lac = hex_data[p:p+4]   
             p += 4
-            cell_id = hex_data[p:p+6]
-            p += 6
-            acc = hex_data[p:p+4]
+            cell_id = hex_data[p:p+8]
+            p += 8
+            acc = hex_data[p:p+2]
             acc = int(acc, 16) 
-            p += 4
+            p += 2
             data_up = hex_data[p:p+2]
             p += 2
             gps_real = hex_data[p:p+2]
@@ -327,6 +331,29 @@ def parser_gt06V4(hex_data, imei=None):
  
             # Grava no arquivo CSV
             record_decoded("decoded.csv", linha)
+
+        elif protocol_number == "15":  
+            print("\nAck comando")
+            inicio = hex_data[0:4]
+            p = 4
+            length = hex_data[p:p+2]
+            p += 2
+            protocol_number = hex_data[p:p+2]
+            p += 2
+            length_comando = hex_data[p:p+2]
+            p += 2
+            server_flag = hex_data[p:p+8]
+            p += 8
+
+
+            print(f"\nHead: {inicio}")
+            print(f"Length: {int(length, 16)} ({length})")  
+            print(f"Protocol_number: {protocol_number}")
+            print(f"Length comando: {int(length_comando, 16)} ({length_comando})")
+            print(f"Server flag: {server_flag}")
+
+
+
         else:   
             print(f"Protocolo {protocol_number} ainda não implementado.")
             return None
