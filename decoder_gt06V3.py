@@ -1,6 +1,5 @@
 # decoder_gt06V4.py
 from recordMessages import * 
-from datetime import timedelta
 
 def decode_course_info(course_hex):
     course_MSB = int(course_hex[0:2], 16)
@@ -91,7 +90,7 @@ def parser_gt06V4(hex_data, imei=None):
         elif protocol_number == "13":  # Heartbeat
             print("\n Heartbeat")
             
-        elif protocol_number == "32":  # GPS Data
+        elif protocol_number == "22":  # GPS Data
             print("\nTemporizadas")
             inicio = hex_data[0:4]
             p = 4
@@ -103,7 +102,7 @@ def parser_gt06V4(hex_data, imei=None):
             send_time_utc = hex_to_timestamp(send_time)
             p += 12 
             gps = hex_data[p:p+2]
-            satelites_in_use = int(str(gps[1]), 16)
+            satelites_in_use = int(str(gps[0]), 16)
    
             p += 2
             latitude = hex_data[p:p+8]
@@ -129,8 +128,8 @@ def parser_gt06V4(hex_data, imei=None):
             p += 2
             lac = hex_data[p:p+4]   
             p += 4
-            cell_id = hex_data[p:p+8]
-            p += 8
+            cell_id = hex_data[p:p+6]
+            p += 6
             acc = hex_data[p:p+2]
             acc = int(acc, 16) 
             p += 2
@@ -139,27 +138,9 @@ def parser_gt06V4(hex_data, imei=None):
             gps_real = hex_data[p:p+2]
             p += 2
             milage = hex_data[p:p+8]
-            milage = int(milage, 16) / 1000  # Convertendo para km
+            milage = int(milage, 16)  
             p += 8
-            external_power = hex_data[p:p+4]
-            external_power = int(external_power, 16)* 0.01
-            external_power = float(external_power)
-            external_power_str = f"{external_power:.2f}" 
-            p += 4
-            acc_on_time = hex_data[p:p+8]
-            acc_on_time = int(acc_on_time, 16) 
-            tempo = timedelta(seconds=acc_on_time)
-            dias = tempo.days
-            horas, resto = divmod(tempo.seconds, 3600)
-            minutos, segundos = divmod(resto, 60)
-            tempo_formatado = f"{dias:02d}-{horas:02d}:{minutos:02d}:{segundos:02d}"
-
-            p += 8
-            rat = hex_data[p:p+4]
-            p += 4
-            rat_prefix = rat[:1]
-            rat_suffix = int(rat[1:], 16)
-            reserved = hex_data[p:p+4]
+            serial_number = hex_data[p:p+4]
             p += 4
             checksum = hex_data[p:p+4]
             p += 4
@@ -185,22 +166,18 @@ def parser_gt06V4(hex_data, imei=None):
             print("acc: " + str(acc))
             print("data_up: " + data_up)
             print("gps_real: " + gps_real)
-            print("reserved: " + reserved)
+            print("Serial Number: " + serial_number)
             print("milage: " + str(milage))
-            print("external_power: " + str(external_power_str))
-            print("acc_on_time: " + str(tempo_formatado))
-            print("Tipo de rede: " + rat_prefix)
-            print("Versão de Firmware: " + str(rat_suffix))
             print("checksum: " + checksum)
             print("tail: " + tail)
 
              # Prepara linha formatada para CSV
             # data_inclusao = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            linha = f"{send_time_utc},{imei},,{Tipo_mensagem},77,GT06V4,{rat_suffix},{external_power_str},," \
-                    f"{acc},{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},{tempo_formatado},{rat_prefix}," \
+            linha = f"{send_time_utc},{imei},,{Tipo_mensagem},77,GT06V4,,{external_power},," \
+                    f"{satelites_in_use},,{speed},{course_info['azimute']},,{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},,," \
 
             # Grava no arquivo CSV
-            record_decoded_organized(imei, linha) 
+            record_decoded("decoded.csv", linha) 
 
             
         elif protocol_number == "16":  # GPS Data with additional info
@@ -254,7 +231,7 @@ def parser_gt06V4(hex_data, imei=None):
             alarm = hex_data[p:p+4] 
             p += 4
             milage = hex_data[p:p+8]
-            milage = int(milage, 16) / 1000
+            milage = int(milage, 16)
             p += 8
             serial_number = hex_data[p:p+4]
             serial_number = int(serial_number, 16) 
@@ -339,11 +316,11 @@ def parser_gt06V4(hex_data, imei=None):
 
              # Prepara linha formatada para CSV
             # data_inclusao = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            linha = f"{send_time_utc},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power},," \
-                    f"{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},,," \
+            linha = f"{send_time_utc},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,{external_power},," \
+                    f"{satelites_in_use},,{speed},{course_info['azimute']},,{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},,," \
  
             # Grava no arquivo CSV
-            record_decoded_organized(imei, linha)
+            record_decoded("decoded.csv", linha)
 
         elif protocol_number == "15":  
             print("\nAck comando")

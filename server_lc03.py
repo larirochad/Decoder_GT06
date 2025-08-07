@@ -6,6 +6,8 @@ import json
 from datetime import datetime
 import ifaddr  
 from decoder_gt06V4 import *
+# CORREÇÃO: Ajustar o nome do arquivo para coincidir com o nome real
+from recordMessages import record_decoded_organized  # Movido para cima para evitar importação dupla
 
 # Cache global
 imei_cache = {} 
@@ -40,7 +42,6 @@ def calcular_crc_itu(data_bytes):
                 crc <<= 1
             crc &= 0xFFFF
     return crc
-
 
 def comando_para_protocolo_gt06(comando):
     # print(f"[DEBUG] Comando recebido para formatação: '{comando}'")
@@ -538,6 +539,11 @@ def handle_client(client_socket, address):
                 
                 if imei:
                     msg_to_send = parser_gt06V4(hex_data, imei)
+                    
+                    # CORREÇÃO: Salva dados decodificados no arquivo específico do IMEI
+                    if msg_to_send:  
+                        record_decoded_organized(imei, msg_to_send)
+                        print(f"[LOG] Dados salvos para IMEI {imei}: logs/{imei}_decoded.csv")
 
     except Exception as e:
         print(f"[ERRO] {e}")
@@ -563,6 +569,7 @@ def start_server(ip, port):
         print(f"[OK] Servidor iniciado em {ip}:{port}")
         print(f"[INFO] Arquivo de comandos: {config_file_commands}")
         print(f"[INFO] Arquivo de estado: {state_file}")
+        print(f"[INFO] Logs serão salvos em: logs/IMEI_decoded.csv")
         print("[MODO] Configurações serão enviadas via comando manual (@) com protocolo GT06 corrigido")
     except:
         print("[ERRO] Não foi possível iniciar o servidor. Verifique IP e porta.")

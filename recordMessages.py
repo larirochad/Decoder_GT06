@@ -1,6 +1,7 @@
 import datetime
 import pytz
 from datetime import datetime
+import os
 
 def record_raw(file_name, source, msg):
     curr_time = datetime.now()
@@ -9,7 +10,53 @@ def record_raw(file_name, source, msg):
         f.write(date_time + source + ',' + msg + "\n")
         f.close()
 
-def record_decoded(file_name, msg):
+def record_decoded_by_imei(imei, msg):
+    """
+    Função modificada para criar arquivos separados por IMEI
+    """
+    # Cria o nome do arquivo baseado no IMEI
+    file_name = f"{imei}_decoded.csv"
+    
+    try:
+        # Verifica se o arquivo já existe
+        if os.path.exists(file_name):
+            # Se existe, apenas adiciona os dados
+            with open(file_name, "a+", encoding='utf-8') as d:
+                curr_time = datetime.now()
+                date_time = curr_time.strftime("%Y-%m-%d %H:%M:%S")
+                d.write(f"{date_time},{msg}\n")
+        else:
+            # Se não existe, cria o arquivo com cabeçalho
+            print(f"Criando novo arquivo de log para IMEI: {imei}")
+            with open(file_name, "w", encoding='utf-8') as d:
+                # Escreve o cabeçalho
+                d.write("Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,"
+                        "Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,"
+                        "Alimentação Externa,Alimentação interna,Analog Input Status,"
+                        "Satélites,Duração da Ignição,"
+                        "Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,"
+                        "Hodômetro Total,Horímetro Total,"
+                        "Tipo de Rede\n")
+                
+                # Adiciona o primeiro registro
+                curr_time = datetime.now()
+                date_time = curr_time.strftime("%Y-%m-%d %H:%M:%S")
+                d.write(f"{date_time},{msg}\n")
+                
+    except Exception as e:
+        print(f"Erro ao escrever no arquivo {file_name}: {e}")
+
+# Função para manter compatibilidade (usa IMEI genérico se não especificado)
+def record_decoded(file_name, msg, imei=None):
+    """
+    Função original mantida para compatibilidade
+    Se imei for fornecido, usa a nova função
+    """
+    if imei:
+        record_decoded_by_imei(imei, msg)
+        return
+    
+    # Código original
     try:
         open(file_name, "r")
         with open(file_name, "a+") as d:
@@ -17,25 +64,70 @@ def record_decoded(file_name, msg):
             date_time = curr_time.strftime("%Y-%m-%d %H:%M:%S,")
             d.write(date_time + msg + "\n")
             d.close()
-        #print("Arquivo já existente, o log será adicionado a ele.")
     except:
         print("Arquivo não existe, um novo log será criado.")
         with open(file_name, "a+") as d:
             d.write("Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,"
                     "Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,"
-                    "Alimentação Externa,Analog Input Status,"
+                    "Alimentação Externa,Alimentação interna,Analog Input Status,"
                     "Satélites,Duração da Ignição,"
-                    "Velocidade,Azimuth,Altitude,Latitude,Longitude,MCC,MNC,LAC,Cell ID, Realtime positioning, GPS valido,"
+                    "Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,"
                     "Hodômetro Total,Horímetro Total,"
-                    "RAT\n")
+                    "Tipo de Rede\n")
 
             curr_time = datetime.now()
             date_time = curr_time.strftime("%Y-%m-%d %H:%M:%S")
-            d.write(date_time + msg + "\n")
+            d.write(f"{date_time},{msg}\n")
             d.close()
 
+def criar_pasta_logs():
+    """
+    Cria uma pasta 'logs' para organizar melhor os arquivos
+    """
+    if not os.path.exists('logs'):
+        os.makedirs('logs')
+        print("Pasta 'logs' criada para organizar os arquivos")
 
+def record_decoded_organized(imei, msg):
+    """
+    Versão organizada que salva na pasta logs/
+    """
+    # Garante que a pasta existe
+    criar_pasta_logs()
+    
+    # Cria o nome do arquivo dentro da pasta logs
+    file_name = f"logs/{imei}_decoded.csv"
+    
+    try:
+        # Verifica se o arquivo já existe
+        if os.path.exists(file_name):
+            # Se existe, apenas adiciona os dados
+            with open(file_name, "a+", encoding='utf-8') as d:
+                curr_time = datetime.now()
+                date_time = curr_time.strftime("%Y-%m-%d %H:%M:%S")
+                d.write(f"{date_time},{msg}\n")
+        else:
+            # Se não existe, cria o arquivo com cabeçalho
+            print(f"Criando novo arquivo de log para IMEI: {imei} em {file_name}")
+            with open(file_name, "w", encoding='utf-8') as d:
+                # Escreve o cabeçalho
+                d.write("Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,"
+                        "Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,"
+                        "Alimentação Externa,Alimentação interna,Analog Input Status,"
+                        "Satélites,Duração da Ignição,"
+                        "Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,"
+                        "Hodômetro Total,Horímetro Total,"
+                        "Tipo de Rede\n")
+                
+                # Adiciona o primeiro registro
+                curr_time = datetime.now()
+                date_time = curr_time.strftime("%Y-%m-%d %H:%M:%S")
+                d.write(f"{date_time},{msg}\n")
+                
+    except Exception as e:
+        print(f"Erro ao escrever no arquivo {file_name}: {e}")
 
+# Restante das funções originais permanecem inalteradas
 def hex_to_timestamp(hex_value):
     hex_value = str(hex_value)
 
@@ -71,16 +163,9 @@ def hex_to_timestamp(hex_value):
 
     return dt
 
-
 def converter_para_brasil(dt_utc):
     """
     Converte um datetime UTC para o timezone do Brasil e o formata como "yy-mm-dd HH:MM:SS"
-
-    Args:
-        dt_utc (datetime ou str): Objeto datetime em timezone UTC ou string em vários formatos possíveis
-
-    Returns:
-        str: Data e hora formatadas no timezone do Brasil
     """
     # Verificar se a entrada é uma string
     if isinstance(dt_utc, str):
@@ -123,7 +208,6 @@ def converter_para_brasil(dt_utc):
 
     return formato_brasil
 
-
 def separar_partes_comando(command_string):
     # Verifica se existe o caracter ":" na string
     if ":" in command_string:
@@ -148,7 +232,6 @@ def separar_partes_comando(command_string):
     else:
         # Retorna erro se não encontrar ":"
         return False, "Comando não contém o caracter ':'", "", ""
-
 
 # Exemplo de uso
 '''comando = "8674886297271:AT+GTFRI=gv58cg,1,0,,0,0000,0000,60,60,1000,1000,,0,3600,00068102,0,,0,FFFF$"
