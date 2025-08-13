@@ -65,6 +65,7 @@ def parser_gt06V4(hex_data, imei=None):
     try:
         if protocol_number == "01":  # Login
             print("\n Login")
+            Tipo_mensagem = "Login"
             inicio = hex_data[0:4]
             p = 4
             length = hex_data[p:p+2]
@@ -74,6 +75,7 @@ def parser_gt06V4(hex_data, imei=None):
             imei = hex_data[p:p+16]
             p += 16
             serial_number = hex_data[p:p+4]
+            serial_number = int(serial_number, 16)
             p += 4
             checksum = hex_data[p:p+4]
             p += 4
@@ -84,13 +86,78 @@ def parser_gt06V4(hex_data, imei=None):
             print(f"length: {int(length, 16)} ({length})")    
             print(f"protocol_number: {protocol_number}")      
             print(f"imei: {imei}")                         
-            print(f"Count Number:: {serial_number}")         
+            print(f"Count Number:   {serial_number}")         
             print(f"checksum: {checksum}")                   
             print(f"tail: {tail}")                           
 
+            linha = f",{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,," \
+                    f",,,,,,," \
+
+            # Grava no arquivo CSV
+            record_decoded_organized(imei, linha) 
+
+
         elif protocol_number == "13":  # Heartbeat
             print("\n Heartbeat")
+            Tipo_mensagem = "Heartbeat"
+            inicio = hex_data[0:4]
+            p = 4
+            length = hex_data[p:p+2]
+            p += 2
+            protocol_number = hex_data[p:p+2]
+            p += 2
+            terminal_info = hex_data[p:p+2]
+            p += 2
+            external_power = hex_data[p:p+2]
+            p += 2
+            gsm_signal = hex_data[p:p+2]
+            p += 2
+            alarm = hex_data[p:p+4]
+            p += 4
+            serial_number = hex_data[p:p+4]
+            serial_number = int(serial_number, 16)
+            p += 4
+            checksum = hex_data[p:p+4]
+            p += 4
+            tail = hex_data[p:p+4]
+            p += 4
             
+            external_power = str(external_power)
+           
+            if external_power == '00':
+                external_power = "Sem bateria"
+            elif external_power == '01':
+                external_power = "Bateria extremamente baixa"
+            elif external_power == '02':
+                external_power = "Bem baixa bateria"
+            elif external_power == '03':
+                external_power = "Bateria baixa"
+            elif external_power == '04':
+                external_power = "Bateria média"
+            elif external_power == '05':
+                external_power = "Bateria alta"
+            elif external_power == '06':
+                external_power = "Bateria extremamente alta"
+            else: 
+                external_power = "Desconhecido"
+
+            print(f"Head: {inicio}")
+            print(f"Length: {int(length, 16)} ({length})")
+            print(f"Protocol_number: {protocol_number}")
+            print(f"Terminal_info: {terminal_info}")
+            print("Bateria: " + str(external_power))
+            print(f"GSM_signal: {gsm_signal}")
+            print(f"Alarm: {alarm}")
+            print("Count Number: " + str({serial_number}))
+            print(f"Checksum: {checksum}")
+            print(f"Tail: {tail}")
+
+            linha = f",{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power}," \
+                    f",,,,,,,,,,,,,,,,{gsm_signal}" \
+
+            # Grava no arquivo CSV
+            record_decoded_organized(imei, linha) 
+       
         elif protocol_number == "32":  # GPS Data
             print("\nTemporizadas")
             inicio = hex_data[0:4]
@@ -159,7 +226,8 @@ def parser_gt06V4(hex_data, imei=None):
             p += 4
             rat_prefix = rat[:1]
             rat_suffix = int(rat[1:], 16)
-            reserved = hex_data[p:p+4]
+            serial_number = hex_data[p:p+4]
+            serial_number = int(serial_number, 16) 
             p += 4
             checksum = hex_data[p:p+4]
             p += 4
@@ -185,7 +253,7 @@ def parser_gt06V4(hex_data, imei=None):
             print("acc: " + str(acc))
             print("data_up: " + data_up)
             print("gps_real: " + gps_real)
-            print("reserved: " + reserved)
+            print("Serial number: " + str(serial_number))
             print("milage: " + str(milage))
             print("external_power: " + str(external_power_str))
             print("acc_on_time: " + str(tempo_formatado))
@@ -196,7 +264,7 @@ def parser_gt06V4(hex_data, imei=None):
 
              # Prepara linha formatada para CSV
             # data_inclusao = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            linha = f"{send_time_utc},{imei},,{Tipo_mensagem},77,GT06V4,{rat_suffix},{external_power_str},," \
+            linha = f"{converter_para_brasil(send_time_utc)},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,{rat_suffix},{external_power_str},," \
                     f"{acc},{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},{tempo_formatado},{rat_prefix}," \
 
             # Grava no arquivo CSV
@@ -265,7 +333,7 @@ def parser_gt06V4(hex_data, imei=None):
             p += 4
             
             alarm_str = str(alarm)
-            print(f"alarm: {alarm_str}")
+            #print(f"alarm: {alarm_str}")
             alarm_prefix = alarm_str[:2]
             if alarm_prefix == "01":
                 Tipo_mensagem = "Alerta de Pânico"
@@ -339,7 +407,7 @@ def parser_gt06V4(hex_data, imei=None):
 
              # Prepara linha formatada para CSV
             # data_inclusao = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            linha = f"{send_time_utc},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power},," \
+            linha = f"{converter_para_brasil(send_time_utc)},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power},," \
                     f"{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},,," \
  
             # Grava no arquivo CSV
@@ -357,14 +425,15 @@ def parser_gt06V4(hex_data, imei=None):
             p += 2
             server_flag = hex_data[p:p+8]
             p += 8
-
+            resposta = hex_data[p:]
+            resposta_ascii = bytes.fromhex(resposta).decode('ascii', errors='ignore')
 
             print(f"\nHead: {inicio}")
             print(f"Length: {int(length, 16)} ({length})")  
             print(f"Protocol_number: {protocol_number}")
             print(f"Length comando: {int(length_comando, 16)} ({length_comando})")
             print(f"Server flag: {server_flag}")
-
+            print(f"Resposta: {resposta_ascii}")
 
 
         else:   

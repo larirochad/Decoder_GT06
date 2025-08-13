@@ -1,3 +1,0 @@
-server_port=9117
-payload_file=log_raw.csv
-decoded_file=log_decoded.csv

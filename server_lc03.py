@@ -15,18 +15,35 @@ command_queue = {}  # {imei: {'commands': [], 'current_index': 0, 'waiting_ack':
 client_connections = {}  # {imei: client_socket} - para envio manual de comandos
 config_file_commands = "comandos_config.txt"
 state_file = "command_state.json"
+raw_log_directory = "logs/"
+os.makedirs(raw_log_directory, exist_ok=True)
 
-# Contador global de serial para comandos
-command_serial_counter = 0x0001
+# Adicione esta linha para inicializar o contador serial
+command_serial_counter = 1  # Inicia em 1 para evitar valor zero
+
+# Crie um único arquivo para todas as mensagens
+raw_combined_file = os.path.join(raw_log_directory, "raw.csv")
+
+if not os.path.exists(raw_combined_file):
+    with open(raw_combined_file, "w") as f:
+        f.write("Data/Hora,Direção,Tipo,Mensagem\n")
+
 
 def get_next_serial():
     """Retorna próximo número serial para comandos"""
     global command_serial_counter
+    
+
+    # Inicializa se não existir
+    if 'command_serial_counter' not in globals():
+        command_serial_counter = 1
+    
     serial = command_serial_counter
     command_serial_counter = (command_serial_counter + 1) % 0xFFFF
     if command_serial_counter == 0:
         command_serial_counter = 1
     return serial
+
 
 def calcular_crc_itu(data_bytes):
     """Calcula CRC-ITU para o protocolo GT06"""
@@ -230,10 +247,13 @@ def enviar_comando_manual(imei, comando, client_socket):
         # Converte comando para o formato correto do protocolo GT06
         comando_bytes = comando_para_protocolo_gt06(comando)
         
-        print(f"[MANUAL] Enviando para IMEI {imei}: {comando}")
-        print(f"[TX] {comando_bytes.hex().upper()}")
+        # print(f"[MANUAL] Enviando para IMEI {imei}: {comando}")
+        # print(f"[TX] {comando_bytes.hex().upper()}")
         
         client_socket.sendall(comando_bytes)
+        
+        # Grava o comando enviado como SACK
+        record_combined_message(raw_combined_file, "S", "CMD", comando_bytes.hex().upper())
         
         # Cria entrada na fila para aguardar ACK
         command_queue[imei] = {
@@ -360,6 +380,9 @@ def enviar_proximo_comando(imei):
         
         client_socket.sendall(comando_bytes)
         
+        # Grava o comando enviado como SACK
+        record_combined_message(raw_combined_file, "S", "CMD", comando_bytes.hex().upper())
+        
         # Atualiza estado
         queue_data['waiting_ack'] = True
         queue_data['last_command'] = comando
@@ -413,7 +436,7 @@ def verificar_resposta_comando(hex_data, imei):
     
     # Protocolo 15 é a resposta padrão para comandos no GT06
     if protocol_number == "15":
-        print(f"[RESPOSTA] Protocolo 15 detectado - resposta de comando")
+        # print(f"[RESPOSTA] Protocolo 15 detectado - resposta de comando")
         return True
     
     # Alguns dispositivos podem usar protocolo 80 para responder
@@ -493,6 +516,9 @@ def handle_client(client_socket, address):
                 break
             hex_data = data.hex().upper()
             print(f"[RX] {hex_data}")
+            
+            # Grava a mensagem RAW recebida
+            record_combined_message(raw_combined_file, "D", "RAW", hex_data)
 
             if hex_data.startswith("7878") and hex_data.endswith("0D0A"):
                 protocol_number = hex_data[6:8]
@@ -509,8 +535,11 @@ def handle_client(client_socket, address):
                 # Montar ACK baseado no protocolo
                 if protocol_number in ["01", "13", "16", "32", "15", "80"]:  # login, hbd, gps, respostas
                     ack = create_ack(protocol_number, serial_number)
-                    print(f"[SACK] Enviando ACK para protocolo {protocol_number}")
+                    print(f"[SACK] Enviando ACK para fd {protocol_number}")
                     client_socket.sendall(ack)
+                    
+                    # Grava a resposta SACK enviada
+                    record_combined_message(raw_combined_file, "S", "SACK", ack.hex().upper())
                     
                     if protocol_number == "01":  # Login
                         imei = hex_data[8:24] 
@@ -532,6 +561,8 @@ def handle_client(client_socket, address):
                     print(f"[!] Protocolo {protocol_number} não tratado - enviando ACK genérico")
                     ack = create_ack(protocol_number, serial_number)
                     client_socket.sendall(ack)
+                    # Grava a resposta SACK enviada
+                    record_combined_message(raw_combined_file, "S", "SACK", ack.hex().upper())
                
                 # Parser de mensagens
                 if not imei:
@@ -540,7 +571,7 @@ def handle_client(client_socket, address):
                 if imei:
                     msg_to_send = parser_gt06V4(hex_data, imei)
                     
-                    # CORREÇÃO: Salva dados decodificados no arquivo específico do IMEI
+                    # Salva dados decodificados no arquivo específico do IMEI
                     if msg_to_send:  
                         record_decoded_organized(imei, msg_to_send)
                         print(f"[LOG] Dados salvos para IMEI {imei}: logs/{imei}_decoded.csv")
@@ -589,18 +620,13 @@ def start_server(ip, port):
         thread.start()
 
 def main():
-    config_file = "config.txt"
-    config = carregar_configuracao(config_file)
-
     server_ip = get_vpn_ip()
+    server_port =9117
     if not server_ip:
         print("[ERRO] VPN (Wintun/TAP/tun) não detectada. Conecte a VPN e tente novamente.")
         exit()
 
     print(f"[VPN Detectada] IP: {server_ip}")
-
-    server_port = int(config.get("server_port", 9117))
-
     start_server(ip=server_ip, port=server_port)
 
 if __name__ == "__main__":

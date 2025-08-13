@@ -1,11 +1,17 @@
 from decoder_gt06V4 import parser_gt06V4
 from datetime import datetime
+import os
+import re
 
 def main():
     print("=" * 60)
     print("GT06 MESSAGE PARSER - VERSÃO TERMINAL")
     print("=" * 60)
-    print("Digite mensagens em formato hexadecimal para análise.")
+    print("Opções disponíveis:")
+    print("1. Digite mensagens hexadecimais individuais")
+    print("2. Digite 'file <caminho>' para processar arquivo TXT")
+    print("3. Digite 'help' para ajuda")
+    print("4. Digite 'quit' para sair")
     print("=" * 60)
     print()
 
@@ -17,36 +23,163 @@ def main():
             if not cmd:
                 continue
             
-            # Remove espaços e converte para maiúsculas
-            hex_data = cmd.replace(" ", "").upper()
-            
-            # Valida se é hexadecimal válido
-            if not is_valid_hex(hex_data):
-                print("[ERRO] Formato hexadecimal inválido!")
+            # Comandos especiais
+            if cmd.lower() == 'quit':
+                print("Encerrando parser...")
+                break
+            elif cmd.lower() == 'help':
+                show_help()
+                continue
+            elif cmd.lower().startswith('file '):
+                file_path = cmd[5:].strip()
+                process_file(file_path)
                 continue
             
-            # Timestamp
-            now = datetime.now()
-            timestamp = now.strftime("%d/%m/%Y,%H:%M:%S")
-            
-            print(f"\n{timestamp} - Analisando: {hex_data}")
-            print("-" * 60)
-            
-            # Verifica se é mensagem GT06
-            if is_gt06_message(hex_data):
-                print("[PROTOCOLO] GT06 detectado")
-                analyze_gt06_message(hex_data)
-            
-            print("-" * 60)
-            print()
+            # Processamento de mensagem individual
+            process_single_message(cmd)
             
         except KeyboardInterrupt:
             print("\n\nEncerrando parser...")
             break
         except Exception as e:
-            print(f"[ERRO] Erro ao processar mensagem: {e}")
+            print(f"[ERRO] Erro geral: {e}")
             print("-" * 60)
             print()
+
+def show_help():
+    """Exibe ajuda do sistema"""
+    print("\n" + "=" * 60)
+    print("AJUDA - GT06 MESSAGE PARSER")
+    print("=" * 60)
+    print("COMANDOS:")
+    print("  <hex_message>     - Analisa uma mensagem hexadecimal")
+    print("  file <caminho>    - Processa arquivo TXT com mensagens")
+    print("  help              - Exibe esta ajuda")
+    print("  quit              - Sair do programa")
+    print()
+    print("FORMATO DO ARQUIVO TXT:")
+    print("  - Uma mensagem por linha")
+    print("  - Formato hexadecimal (com ou sem espaços)")
+    print("  - Linhas vazias ou iniciadas com # são ignoradas")
+    print()
+    print("EXEMPLOS:")
+    print("  >> 787811160A0A19120E29C606418C654064E1C40A1C000C0D0A")
+    print("  >> file mensagens.txt")
+    print("=" * 60)
+    print()
+
+def process_single_message(cmd):
+    """Processa uma única mensagem hexadecimal"""
+    # Remove espaços e converte para maiúsculas
+    hex_data = cmd.replace(" ", "").upper()
+    
+    # Valida se é hexadecimal válido
+    if not is_valid_hex(hex_data):
+        print("[ERRO] Formato hexadecimal inválido!")
+        return
+    
+    # Timestamp
+    now = datetime.now()
+    timestamp = now.strftime("%d/%m/%Y,%H:%M:%S")
+    
+    print(f"\n{timestamp} - Analisando: {hex_data}")
+    print("-" * 60)
+    
+    # Analisa a mensagem
+    analyze_message(hex_data)
+    
+    print("-" * 60)
+    print()
+
+def process_file(file_path):
+    """Processa arquivo TXT com múltiplas mensagens"""
+    print(f"\n[ARQUIVO] Processando: {file_path}")
+    print("=" * 60)
+    
+    if not os.path.exists(file_path):
+        print(f"[ERRO] Arquivo não encontrado: {file_path}")
+        return
+    
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            lines = file.readlines()
+        
+        total_lines = len(lines)
+        processed = 0
+        errors = 0
+        
+        print(f"[ARQUIVO] Total de linhas: {total_lines}")
+        print("-" * 60)
+        
+        for line_num, line in enumerate(lines, 1):
+            line = line.strip()
+            
+            # Pula linhas vazias ou comentários
+            if not line or line.startswith('#'):
+                continue
+            
+            print(f"\n[LINHA {line_num}] Processando: {line}")
+            print("-" * 40)
+            
+            try:
+                # Remove espaços e converte para maiúsculas
+                hex_data = line.replace(" ", "").upper()
+                
+                # Valida se é hexadecimal válido
+                if not is_valid_hex(hex_data):
+                    print(f"[ERRO] Linha {line_num}: Formato hexadecimal inválido")
+                    errors += 1
+                    continue
+                
+                # Analisa a mensagem
+                analyze_message(hex_data)
+                processed += 1
+                
+            except Exception as e:
+                print(f"[ERRO] Linha {line_num}: {e}")
+                errors += 1
+        
+        # Resumo do processamento
+        print("\n" + "=" * 60)
+        print("RESUMO DO PROCESSAMENTO")
+        print("=" * 60)
+        print(f"Total de linhas: {total_lines}")
+        print(f"Mensagens processadas: {processed}")
+        print(f"Erros encontrados: {errors}")
+        print(f"Taxa de sucesso: {(processed/max(processed+errors, 1)*100):.1f}%")
+        print("=" * 60)
+        print()
+        
+    except Exception as e:
+        print(f"[ERRO] Erro ao ler arquivo: {e}")
+
+def analyze_message(hex_data):
+    """Analisa uma mensagem (GT06 ou outras)"""
+    # Verifica se é mensagem GT06
+    if is_gt06_message(hex_data):
+        print("[PROTOCOLO] GT06 detectado")
+        analyze_gt06_message(hex_data)
+    else:
+        print("[PROTOCOLO] Protocolo não identificado ou não GT06")
+        print(f"[RAW] Dados: {hex_data}")
+        
+        # Tenta identificar outros padrões
+        identify_other_protocols(hex_data)
+
+def identify_other_protocols(hex_data):
+    """Tenta identificar outros protocolos comuns"""
+    if hex_data.startswith("7979"):
+        print("[POSSÍVEL] Protocolo GT09/GT02 detectado")
+    elif hex_data.startswith("2424"):  # $$
+        print("[POSSÍVEL] Protocolo baseado em ASCII detectado")
+    elif len(hex_data) >= 4:
+        # Verifica se pode ser ASCII
+        try:
+            ascii_test = bytes.fromhex(hex_data[:20]).decode('ascii', errors='ignore')
+            if ascii_test.isprintable():
+                print(f"[ASCII] Possível conteúdo ASCII: {ascii_test}")
+        except:
+            pass
 
 def is_valid_hex(hex_string):
     """Verifica se a string é hexadecimal válida"""
@@ -183,7 +316,5 @@ def analyze_command_message(hex_data, start, length):
     except Exception as e:
         print(f"[CMD] Erro ao analisar comando: {e}")
 
-
-            
 if __name__ == "__main__":
     main()

@@ -32,11 +32,11 @@ def record_decoded_by_imei(imei, msg):
                 # Escreve o cabeçalho
                 d.write("Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,"
                         "Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,"
-                        "Alimentação Externa,Alimentação interna,Analog Input Status,"
+                        "Alimentação Externa,Bateria interna interna,Analog Input Status,"
                         "Satélites,Duração da Ignição,"
                         "Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,"
                         "Hodômetro Total,Horímetro Total,"
-                        "Tipo de Rede\n")
+                        "Tipo de Rede,Qualidade do sinal de GSM\n")
                 
                 # Adiciona o primeiro registro
                 curr_time = datetime.now()
@@ -69,11 +69,11 @@ def record_decoded(file_name, msg, imei=None):
         with open(file_name, "a+") as d:
             d.write("Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,"
                     "Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,"
-                    "Alimentação Externa,Alimentação interna,Analog Input Status,"
+                    "Alimentação Externa,Bateria interna,Analog Input Status,"
                     "Satélites,Duração da Ignição,"
                     "Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,"
                     "Hodômetro Total,Horímetro Total,"
-                    "Tipo de Rede\n")
+                    "Tipo de Rede,Qualidade do sinal de GSM \n")
 
             curr_time = datetime.now()
             date_time = curr_time.strftime("%Y-%m-%d %H:%M:%S")
@@ -113,11 +113,11 @@ def record_decoded_organized(imei, msg):
                 # Escreve o cabeçalho
                 d.write("Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,"
                         "Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,"
-                        "Alimentação Externa,Alimentação interna,Analog Input Status,"
+                        "Alimentação Externa,Bateria interna,Analog Input Status,"
                         "Satélites,Duração da Ignição,"
                         "Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,"
                         "Hodômetro Total,Horímetro Total,"
-                        "Tipo de Rede\n")
+                        "Tipo de Rede,Qualidade do sinal de GSM\n")
                 
                 # Adiciona o primeiro registro
                 curr_time = datetime.now()
@@ -126,6 +126,17 @@ def record_decoded_organized(imei, msg):
                 
     except Exception as e:
         print(f"Erro ao escrever no arquivo {file_name}: {e}")
+
+def record_combined_message(file_name, direction, msg_type, hex_data):
+    """Grava mensagem no arquivo combinado"""
+    try:
+        curr_time = datetime.now()
+        date_time = curr_time.strftime("%Y-%m-%d %H:%M:%S")
+        
+        with open(file_name, "a+", encoding='utf-8') as f:
+            f.write(f"{date_time},{direction},{msg_type},{hex_data}\n")
+    except Exception as e:
+        print(f"Erro ao gravar mensagem combinada: {e}")
 
 # Restante das funções originais permanecem inalteradas
 def hex_to_timestamp(hex_value):
