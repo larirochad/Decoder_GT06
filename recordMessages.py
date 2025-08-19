@@ -36,7 +36,7 @@ def record_decoded_by_imei(imei, msg):
                         "Satélites,Duração da Ignição,"
                         "Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,"
                         "Hodômetro Total,Horímetro Total,"
-                        "Tipo de Rede,Qualidade do sinal de GSM\n")
+                        "Tipo de Rede,Qualidade do sinal de GSM,Terminal information,Carregamento,Funcionamento,Alarmes internos,Rastramento,Gás/Oléo\n")
                 
                 # Adiciona o primeiro registro
                 curr_time = datetime.now()
@@ -68,12 +68,12 @@ def record_decoded(file_name, msg, imei=None):
         print("Arquivo não existe, um novo log será criado.")
         with open(file_name, "a+") as d:
             d.write("Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,"
-                    "Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,"
-                    "Alimentação Externa,Bateria interna,Analog Input Status,"
-                    "Satélites,Duração da Ignição,"
-                    "Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,"
-                    "Hodômetro Total,Horímetro Total,"
-                    "Tipo de Rede,Qualidade do sinal de GSM \n")
+                        "Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,"
+                        "Alimentação Externa,Bateria interna interna,Analog Input Status,"
+                        "Satélites,Duração da Ignição,"
+                        "Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,"
+                        "Hodômetro Total,Horímetro Total,"
+                        "Tipo de Rede,Qualidade do sinal de GSM,Terminal information,Carregamento,Funcionamento,Alarmes internos,Rastramento,Gás/Oléo\n")
 
             curr_time = datetime.now()
             date_time = curr_time.strftime("%Y-%m-%d %H:%M:%S")
@@ -113,11 +113,11 @@ def record_decoded_organized(imei, msg):
                 # Escreve o cabeçalho
                 d.write("Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,"
                         "Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,"
-                        "Alimentação Externa,Bateria interna,Analog Input Status,"
+                        "Alimentação Externa,Bateria interna interna,Analog Input Status,"
                         "Satélites,Duração da Ignição,"
                         "Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,"
                         "Hodômetro Total,Horímetro Total,"
-                        "Tipo de Rede,Qualidade do sinal de GSM\n")
+                        "Tipo de Rede,Qualidade do sinal de GSM,Terminal information,Carregamento,Funcionamento,Alarmes internos,Rastramento,Gás/Oléo\n")
                 
                 # Adiciona o primeiro registro
                 curr_time = datetime.now()

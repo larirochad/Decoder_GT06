@@ -233,7 +233,10 @@ def parser_gt06V4(hex_data, imei=None):
             p += 4
             tail = hex_data[p:p+4]
             p += 4
-            Tipo_mensagem = "Temporizada"
+            if acc == 0:
+                Tipo_mensagem = "Modo econômico"
+            elif acc == 1:
+                Tipo_mensagem = "Posicionamento por tempo em movimento"
             
             print("Head:" + inicio) 
             print("Length: " + str(int(length, 16)))
@@ -314,6 +317,45 @@ def parser_gt06V4(hex_data, imei=None):
             cell_id = hex_data[p:p+6]
             p += 6
             terminal_status = hex_data[p:p+2]
+            terminal_status = bin(int(terminal_status, 16))[2:].zfill(8)
+            normal_working = terminal_status[7]        # Bit0 (menos significativo)
+            acc_status = terminal_status[6]            # Bit1
+            charging_status = terminal_status[5]       # Bit2
+            alarm_status = terminal_status[2:5]        # Bit3~Bit5 (invertido: [4:1:-1])
+            gps_status = terminal_status[1]            # Bit6
+            gas_oil_status = terminal_status[0]     
+            if normal_working == '1':
+                normal_working = "Normal"
+            elif normal_working == '0':
+                normal_working = "Desativado"
+            if acc_status == '1':
+                acc = '1'
+            elif acc_status == '0':
+                acc = '0'
+            if charging_status == '1':
+                charging_status = "Carregamento on"
+            elif charging_status == '0':
+                charging_status = "Carregamento off"
+            if alarm_status == '000':  
+                alarm_status = "Normal"
+            elif alarm_status == '001':
+                alarm_status = "Shock alarm"
+            elif alarm_status == '010':
+                alarm_status = "Power cut alarm"
+            elif alarm_status == '011':
+                alarm_status = "Low battery alarm"
+            elif alarm_status == '100':
+                alarm_status = "SOS alarm"
+            if gps_status == '1':
+                gps_status = "Rastreamento de GPS ativo"
+            elif gps_status == '0':
+                gps_status = "Rastreamento de GPS inativo"
+            if gas_oil_status == '1':
+                gas_oil_status = "Gás/oléo e eletricidade ativo"
+            elif gas_oil_status == '0':
+                gas_oil_status = "Oléo e eletricidade inativo"
+
+
             p += 2
             external_power = hex_data[p:p+2]
             p += 2
@@ -407,8 +449,8 @@ def parser_gt06V4(hex_data, imei=None):
 
              # Prepara linha formatada para CSV
             # data_inclusao = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-            linha = f"{converter_para_brasil(send_time_utc)},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power},," \
-                    f"{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},,," \
+            linha = f"{converter_para_brasil(send_time_utc)},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power},{acc}," \
+                    f"{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},,,,{terminal_status},{charging_status},{normal_working},{alarm_status},{gps_status},{gas_oil_status}" \
  
             # Grava no arquivo CSV
             record_decoded_organized(imei, linha)

@@ -2,10 +2,20 @@ from decoder_gt06V4 import parser_gt06V4
 from datetime import datetime
 import os
 import re
+import csv
 
 def main():
     print("=" * 60)
     print("GT06 MESSAGE PARSER - VERSÃO TERMINAL")
+    print("=" * 60)
+    
+    # Solicita o IMEI do usuário
+    imei = input("Digite o IMEI do dispositivo: ").strip()
+    if not imei:
+        print("IMEI não informado. Usando 'default_imei'")
+        imei = "default_imei"
+    
+    print(f"Arquivo CSV: {imei}.csv")
     print("=" * 60)
     print("Opções disponíveis:")
     print("1. Digite mensagens hexadecimais individuais")
@@ -32,11 +42,11 @@ def main():
                 continue
             elif cmd.lower().startswith('file '):
                 file_path = cmd[5:].strip()
-                process_file(file_path)
+                process_file(file_path, imei)
                 continue
             
             # Processamento de mensagem individual
-            process_single_message(cmd)
+            process_single_message(cmd, imei)
             
         except KeyboardInterrupt:
             print("\n\nEncerrando parser...")
@@ -68,7 +78,7 @@ def show_help():
     print("=" * 60)
     print()
 
-def process_single_message(cmd):
+def process_single_message(cmd, imei):
     """Processa uma única mensagem hexadecimal"""
     # Remove espaços e converte para maiúsculas
     hex_data = cmd.replace(" ", "").upper()
@@ -85,13 +95,13 @@ def process_single_message(cmd):
     print(f"\n{timestamp} - Analisando: {hex_data}")
     print("-" * 60)
     
-    # Analisa a mensagem
-    analyze_message(hex_data)
+    # Analisa a mensagem e salva no CSV
+    analyze_message(hex_data, imei, timestamp)
     
     print("-" * 60)
     print()
 
-def process_file(file_path):
+def process_file(file_path, imei):
     """Processa arquivo TXT com múltiplas mensagens"""
     print(f"\n[ARQUIVO] Processando: {file_path}")
     print("=" * 60)
@@ -131,8 +141,12 @@ def process_file(file_path):
                     errors += 1
                     continue
                 
-                # Analisa a mensagem
-                analyze_message(hex_data)
+                # Timestamp para cada mensagem do arquivo
+                now = datetime.now()
+                timestamp = now.strftime("%d/%m/%Y,%H:%M:%S")
+                
+                # Analisa a mensagem e salva no CSV
+                analyze_message(hex_data, imei, timestamp)
                 processed += 1
                 
             except Exception as e:
@@ -153,15 +167,18 @@ def process_file(file_path):
     except Exception as e:
         print(f"[ERRO] Erro ao ler arquivo: {e}")
 
-def analyze_message(hex_data):
-    """Analisa uma mensagem (GT06 ou outras)"""
+def analyze_message(hex_data, imei, timestamp):
+    """Analisa uma mensagem (GT06 ou outras) e salva no CSV"""
     # Verifica se é mensagem GT06
     if is_gt06_message(hex_data):
         print("[PROTOCOLO] GT06 detectado")
-        analyze_gt06_message(hex_data)
+        analyze_gt06_message(hex_data, imei, timestamp)
     else:
         print("[PROTOCOLO] Protocolo não identificado ou não GT06")
         print(f"[RAW] Dados: {hex_data}")
+        
+        # Salva mensagem não identificada no CSV
+        # save_to_csv(imei, timestamp, hex_data, "Protocolo não identificado", "N/A", "N/A", "N/A")
         
         # Tenta identificar outros padrões
         identify_other_protocols(hex_data)
@@ -193,12 +210,13 @@ def is_gt06_message(hex_data):
     """Verifica se a mensagem é do protocolo GT06"""
     return hex_data.startswith("7878") and hex_data.endswith("0D0A")
 
-def analyze_gt06_message(hex_data):
+def analyze_gt06_message(hex_data, imei, timestamp):
     """Analisa mensagem GT06 usando o parser existente"""
     try:
         # Extrai informações básicas do protocolo GT06
         if len(hex_data) < 12:
             print("[ERRO] Mensagem GT06 muito curta")
+            # save_to_csv(imei, timestamp, hex_data, "GT06", "Erro", "Mensagem muito curta", "N/A")
             return
         
         # Estrutura básica GT06: 7878 + LENGTH + PROTOCOL + DATA + SERIAL + CRC + 0D0A
@@ -224,25 +242,60 @@ def analyze_gt06_message(hex_data):
         
         # Extrai serial (sempre nos últimos 4 chars antes do CRC)
         serial_start = 6 + (length - 5) * 2
+        serial = "N/A"
         if serial_start + 4 <= len(hex_data) - 6:  # -6 para CRC + stop bits
             serial = hex_data[serial_start:serial_start + 4]
             print(f"[GT06] Serial: 0x{serial}")
         
         # Chama o parser original se disponível
+        parser_result = "N/A"
         try:
-            # IMEI fictício para teste (você pode modificar conforme necessário)
-            test_imei = "123456789012345"
-            result = parser_gt06V4(hex_data, test_imei)
+            result = parser_gt06V4(hex_data, imei)
             if result:
+                parser_result = str(result)
                 print(f"[PARSER] Resultado: {result}")
         except Exception as parser_error:
+            parser_result = f"Erro no parser: {parser_error}"
             print(f"[PARSER] Erro no parser GT06: {parser_error}")
         
-        # Análise detalhada por protocolo
-        analyze_protocol_details(hex_data, protocol, length)
+    #     # Salva no CSV
+    #     save_to_csv(imei, timestamp, hex_data, "GT06", protocol_name, serial, parser_result)
+        
+    #     # Análise detalhada por protocolo
+    #     analyze_protocol_details(hex_data, protocol, length)
         
     except Exception as e:
         print(f"[ERRO] Erro na análise GT06: {e}")
+    #     save_to_csv(imei, timestamp, hex_data, "GT06", "Erro", f"Erro na análise: {e}", "N/A")
+
+# def save_to_csv(imei, timestamp, hex_data, protocol, message_type, serial, parser_result):
+#     """Salva a mensagem no arquivo CSV"""
+#     filename = f"{imei}.csv"
+#     file_exists = os.path.isfile(filename)
+    
+#     try:
+#         with open(filename, 'a', newline='', encoding='utf-8') as csvfile:
+#             fieldnames = ['timestamp', 'hex_data', 'protocol', 'message_type', 'serial', 'parser_result']
+#             writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+            
+#             # Escreve cabeçalho se o arquivo não existir
+#             if not file_exists:
+#                 writer.writeheader()
+            
+#             # Escreve os dados
+#             writer.writerow({
+#                 'timestamp': timestamp,
+#                 'hex_data': hex_data,
+#                 'protocol': protocol,
+#                 'message_type': message_type,
+#                 'serial': serial,
+#                 'parser_result': parser_result
+#             })
+        
+#         print(f"[CSV] Mensagem salva em {filename}")
+        
+#     except Exception as e:
+#         print(f"[ERRO] Erro ao salvar no CSV: {e}")
 
 def analyze_protocol_details(hex_data, protocol, length):
     """Análise detalhada baseada no tipo de protocolo"""
