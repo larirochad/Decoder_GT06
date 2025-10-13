@@ -1,0 +1,43 @@
+====================================================================================================
+📋 RELATÓRIO COMPLETO DE ANÁLISE
+====================================================================================================
+📊 RESUMO GERAL:
+   📁 Total de Registros: 473
+   📅 Período: 2025-10-09 08:30:38 até 2025-10-10 13:17:24
+
+🚗 INFORMAÇÕES DO HODÔMETRO:
+   🏁 Primeiro KM válido: 9006.70 km (2025-10-09 08:30:38.000)
+   🏆 Último KM válido: 9006.70 km (2025-10-10 13:17:24.000)
+   📏 Distância percorrida no período: 0.00 km
+   📊 Total de registros válidos de hodômetro: 30
+
+🛣️ INFORMAÇÕES DAS VIAGENS:
+   ✅ Viagens completas (IGN→IGF): 0
+   🔴 IGN sem IGF correspondente: 0
+   🟠 IGF sem IGN anterior: 0
+
+🔄 REBOOTS DETECTADOS:
+   🔢 Total: 2
+   📅 2025-10-09 13:45:54.169000 - Seq: 384 → 0
+   📅 2025-10-09 14:21:29.855000 - Seq: 6 → 3
+
+⏰ ANOMALIAS DE INTERVALOS:
+   🎯 Posicionamento (esperado 3min ±2s): 0 anomalias
+   💤 Modo Econômico (esperado 1h ±2s): 2 anomalias
+   💤 DETALHES COMPLETOS - Modo Econômico:
+        1. Seq 5 (2025-10-09 14:17:11): 00:46:33 (diff: -807s)
+        2. Seq 21 (2025-10-09 15:17:24): 01:00:13 (diff: 13s)
+
+🔥 ANOMALIAS DE IGNIÇÃO:
+   🚨 Total: 0 anomalias
+🏃 ANOMALIAS DE VELOCIDADE:
+   🚨 Total: 0 anomalias
+
+📝 MENSAGENS EM LOG APÓS IGF:
+   🚨 Total de ocorrências: 0
+
+🎉 ANÁLISE CONCLUÍDA!
+📁 Todos os arquivos foram salvos em: relatorios/
+====================================================================================================
+✅ RELATÓRIO FINALIZADO COM SUCESSO!
+====================================================================================================

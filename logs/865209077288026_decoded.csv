@@ -1,0 +1,636 @@
+Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,Alimentação Externa,Bateria interna interna,Analog Input Status,Satélites,Duração da Ignição,Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,Hodômetro Total,Horímetro Total,Tipo de Rede,Qualidade do sinal de GSM,Terminal information,Carregamento,Funcionamento,Alarmes internos,Rastramento,Gás/Oléo
+2025-10-09 08:18:30.583,,865209077288026,262,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 08:22:30.664,,865209077288026,263,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 08:26:30.742,,865209077288026,264,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 08:30:30.874,,865209077288026,265,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 08:34:30.995,,865209077288026,266,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 08:38:31.585,,865209077288026,267,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 08:42:31.156,,865209077288026,268,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 08:46:31.287,,865209077288026,269,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 08:50:31.352,,865209077288026,270,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 08:54:31.424,,865209077288026,271,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 08:54:46.448,2025-10-09 08:54:29.000,865209077288026,272,Modo econômico,77,GT06V4,557,12.80,,0,6,,0,108,-22.911209,-47.059076,02D4,0A,C3C7,0DBD6A0B,0,1,19826.6,17-14:45:21,4,
+2025-10-09 08:58:32.079,,865209077288026,273,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:02:31.664,,865209077288026,274,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:06:31.746,,865209077288026,275,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:10:31.842,,865209077288026,276,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:14:31.990,,865209077288026,277,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:18:32.048,,865209077288026,278,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:22:32.156,,865209077288026,279,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:26:32.304,,865209077288026,280,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:30:32.345,,865209077288026,281,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:34:32.402,,865209077288026,282,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:38:32.524,,865209077288026,283,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:42:32.643,,865209077288026,284,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:46:32.726,,865209077288026,285,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:50:33.390,,865209077288026,286,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:54:34.021,,865209077288026,287,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 09:54:47.941,2025-10-09 09:54:29.000,865209077288026,288,Modo econômico,77,GT06V4,557,12.70,,0,6,,0,108,-22.911209,-47.059076,02D4,0A,C3C7,0DBD6A15,0,1,19826.6,17-14:45:21,4,
+2025-10-09 09:58:33.013,,865209077288026,289,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:02:33.122,,865209077288026,290,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:06:33.942,,865209077288026,291,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:10:33.343,,865209077288026,292,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:14:33.414,,865209077288026,293,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:18:34.034,,865209077288026,294,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:22:33.637,,865209077288026,295,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:26:33.718,,865209077288026,296,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:30:33.782,,865209077288026,297,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:34:33.891,,865209077288026,298,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:38:34.004,,865209077288026,299,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:42:34.074,,865209077288026,300,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:46:34.195,,865209077288026,301,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:50:34.315,,865209077288026,302,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:51:25.340,2025-10-09 10:51:05.000,865209077288026,303,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,108,-22.911209,-47.059076,02D4,0A,C3C7,BD6A15,0,1,19826.6,,,,01000111,Carregamento on,Normal,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 10:51:26.211,,865209077288026,304,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:51:28.231,,865209077288026,305,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:54:25.391,2025-10-09 10:54:23.000,865209077288026,306,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,9,,29,4,-22.912413,-47.059369,02D4,0A,C3C7,0DBD6A16,0,1,19827.1,17-14:48:21,4,
+2025-10-09 10:54:34.307,,865209077288026,307,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 10:54:45.313,2025-10-09 10:54:44.000,865209077288026,308,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,89,194,-22.914678,-47.059182,02D4,0A,C3C7,BD6A16,0,1,19827.4,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 10:54:56.301,2025-10-09 10:54:55.000,865209077288026,309,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,64,212,-22.916400,-47.060271,02D4,0A,C3C7,BD6A16,0,1,19827.6,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 10:57:25.517,2025-10-09 10:57:23.000,865209077288026,310,Posicionamento por tempo em movimento,77,GT06V4,557,12.40,,1,9,,47,210,-22.928504,-47.069262,02D4,0A,C3C7,0DBDD30C,0,1,19829.5,17-14:51:21,4,
+2025-10-09 10:57:58.466,2025-10-09 10:57:57.000,865209077288026,311,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,96,236,-22.932218,-47.072431,02D4,0A,C3C7,BDD30C,0,1,19830.0,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 10:58:35.052,,865209077288026,312,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:00:25.526,2025-10-09 11:00:23.000,865209077288026,313,Posicionamento por tempo em movimento,77,GT06V4,557,13.10,,1,9,,116,202,-22.955947,-47.094378,02D4,0A,C557,0DBD6003,0,1,19833.8,17-14:54:21,4,
+2025-10-09 11:02:34.564,,865209077288026,314,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:03:25.639,2025-10-09 11:03:24.000,865209077288026,315,Posicionamento por tempo em movimento,77,GT06V4,557,12.40,,1,9,,129,356,-22.981951,-47.111551,02D4,0A,C557,0DC1290B,0,1,19838.7,17-14:57:21,4,
+2025-10-09 11:04:35.674,2025-10-09 11:04:35.000,865209077288026,316,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,62,322,-22.963182,-47.122089,02D4,0A,C557,C75C0C,0,1,19841.1,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 11:05:17.715,2025-10-09 11:05:17.000,865209077288026,317,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,84,336,-22.959460,-47.124787,02D4,0A,C557,C75C0C,0,1,19841.5,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 11:06:26.225,2025-10-09 11:06:24.000,865209077288026,318,Posicionamento por tempo em movimento,77,GT06V4,557,12.30,,1,9,,123,352,-22.940267,-47.126053,02D4,0A,C557,0DBD5C03,0,1,19843.7,17-15:00:21,4,
+2025-10-09 11:06:34.613,,865209077288026,319,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:09:26.075,2025-10-09 11:09:24.000,865209077288026,320,Posicionamento por tempo em movimento,77,GT06V4,557,12.20,,1,9,,148,260,-22.911173,-47.174173,02D4,0A,C557,0DBD5C15,0,1,19850.3,17-15:03:21,4,
+2025-10-09 11:10:34.762,,865209077288026,321,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:12:26.400,2025-10-09 11:12:24.000,865209077288026,322,Posicionamento por tempo em movimento,77,GT06V4,557,12.30,,1,10,,141,338,-22.886947,-47.229444,02D4,0A,7CA1,0F66CF67,0,1,19857.1,17-15:06:21,4,
+2025-10-09 11:14:34.856,,865209077288026,323,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:15:25.963,2025-10-09 11:15:24.000,865209077288026,324,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,10,,100,312,-22.863060,-47.284431,02D4,0A,C48F,0DBD1A16,0,1,19863.5,17-15:09:21,4,
+2025-10-09 11:15:39.934,2025-10-09 11:15:39.000,865209077288026,325,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,65,306,-22.860967,-47.287129,02D4,0A,C48F,BD1A16,0,1,19863.8,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 11:18:25.950,2025-10-09 11:18:24.000,865209077288026,326,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,10,,55,28,-22.843587,-47.279093,02D4,0A,C48F,0DC7FB17,0,1,19866.4,17-15:12:21,4,
+2025-10-09 11:18:34.980,,865209077288026,327,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:19:46.022,2025-10-09 11:19:44.000,865209077288026,328,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,42,-22.836138,-47.274636,02D4,0A,C48F,BDE117,0,1,19867.3,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 11:19:46.923,,865209077288026,329,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:20:45.096,2025-10-09 11:20:44.000,865209077288026,330,Modo econômico,77,GT06V4,557,12.90,,0,10,,0,42,-22.836138,-47.274636,02D4,0A,C48F,0DBDE10D,0,1,19867.3,17-15:13:41,4,
+2025-10-09 11:21:42.046,2025-10-09 11:21:40.000,865209077288026,331,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,42,-22.836138,-47.274636,02D4,0A,C48F,BDE10D,0,1,19867.3,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 11:21:42.952,,865209077288026,332,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:22:35.060,,865209077288026,333,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:24:42.135,2025-10-09 11:24:40.000,865209077288026,334,Posicionamento por tempo em movimento,77,GT06V4,557,14.20,,1,10,,22,326,-22.825629,-47.269373,02D4,0A,C48F,0DBDE10B,0,1,19868.7,17-15:16:41,4,
+2025-10-09 11:26:35.834,,865209077288026,335,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:27:42.219,2025-10-09 11:27:40.000,865209077288026,336,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,10,,0,216,-22.822616,-47.267244,02D4,0A,C48F,0DBDE802,0,1,19869.2,17-15:19:41,4,
+2025-10-09 11:27:45.129,2025-10-09 11:27:43.000,865209077288026,337,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,216,-22.822616,-47.267244,02D4,0A,C48F,BDE802,0,1,19869.2,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 11:27:46.131,,865209077288026,338,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:28:44.242,2025-10-09 11:28:43.000,865209077288026,339,Modo econômico,77,GT06V4,557,13.00,,0,10,,0,216,-22.822616,-47.267244,02D4,0A,C48F,0DBDE802,0,1,19869.2,17-15:19:44,4,
+2025-10-09 11:30:35.262,,865209077288026,340,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:30:45.185,,865209077288026,341,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:34:35.340,,865209077288026,342,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:38:35.447,,865209077288026,343,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:42:35.530,,865209077288026,344,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:46:35.656,,865209077288026,345,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:50:35.755,,865209077288026,346,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:54:35.821,,865209077288026,347,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 11:58:35.995,,865209077288026,348,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:02:36.092,,865209077288026,349,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:06:36.167,,865209077288026,350,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:10:36.255,,865209077288026,351,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:14:36.352,,865209077288026,352,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:18:36.470,,865209077288026,353,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:22:36.566,,865209077288026,354,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:26:36.671,,865209077288026,355,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:27:46.738,2025-10-09 12:27:43.000,865209077288026,356,Modo econômico,77,GT06V4,557,12.90,,0,10,,0,216,-22.822616,-47.267244,02D4,0A,C48F,0DBDE802,0,1,19869.2,17-15:19:44,4,
+2025-10-09 12:30:36.768,,865209077288026,357,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:34:37.799,,865209077288026,358,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:38:36.950,,865209077288026,359,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:42:37.029,,865209077288026,360,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:46:37.131,,865209077288026,361,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:50:37.283,,865209077288026,362,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:54:37.303,,865209077288026,363,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 12:58:37.495,,865209077288026,364,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:02:37.538,,865209077288026,365,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:03:03.549,2025-10-09 13:03:00.000,865209077288026,366,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,216,-22.822616,-47.267244,02D4,0A,C48F,BDE802,0,1,19869.2,,,,01000111,Carregamento on,Normal,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 13:03:04.450,,865209077288026,367,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:03:06.450,,865209077288026,368,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:06:03.663,2025-10-09 13:06:02.000,865209077288026,369,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,9,,0,230,-22.825498,-47.265822,02D4,0A,C48F,0DBDDB03,0,1,19869.8,17-15:22:44,4,
+2025-10-09 13:06:37.644,,865209077288026,370,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:09:03.693,2025-10-09 13:09:02.000,865209077288026,371,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,10,,0,58,-22.828518,-47.264933,02D4,0A,C48F,0DBDE101,0,1,19870.2,17-15:25:44,4,
+2025-10-09 13:10:37.729,,865209077288026,372,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:12:03.837,2025-10-09 13:12:02.000,865209077288026,373,Posicionamento por tempo em movimento,77,GT06V4,557,14.30,,1,10,,30,338,-22.827376,-47.265249,02D4,0A,C48F,0DBDE816,0,1,19870.7,17-15:28:44,4,
+2025-10-09 13:14:38.778,,865209077288026,374,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:15:03.919,2025-10-09 13:15:02.000,865209077288026,375,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,9,,15,332,-22.827678,-47.265169,02D4,0A,C48F,0DBDE80C,0,1,19871.3,17-15:31:44,4,
+2025-10-09 13:15:54.873,2025-10-09 13:15:54.000,865209077288026,376,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,226,-22.827553,-47.265413,02D4,0A,C48F,BDE80C,0,1,19871.4,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 13:15:55.812,,865209077288026,377,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:16:53.954,2025-10-09 13:16:53.000,865209077288026,378,Modo econômico,77,GT06V4,557,13.00,,0,11,,0,226,-22.827553,-47.265413,02D4,0A,C48F,0DBDE80C,0,1,19871.4,17-15:32:35,4,
+2025-10-09 13:18:37.923,,865209077288026,379,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:18:54.950,,865209077288026,380,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:22:38.204,,865209077288026,381,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:26:38.131,,865209077288026,382,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:30:38.231,,865209077288026,383,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:34:38.384,,865209077288026,384,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:38:38.433,,865209077288026,385,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:42:38.498,,865209077288026,386,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:46:38.585,,865209077288026,387,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:50:38.732,,865209077288026,388,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:54:38.816,,865209077288026,389,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 13:58:38.882,,865209077288026,390,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:02:39.018,,865209077288026,391,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:06:39.100,,865209077288026,392,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:21:07.748,,865209077288026,0,Login,77,GT06V4,,,,,,,,,,,
+2025-10-09 14:21:58.800,,865209077288026,3,Login,77,GT06V4,,,,,,,,,,,
+2025-10-09 14:22:01.282,,865209077288026,4,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:22:01.297,2025-10-09 14:08:49.000,865209077288026,5,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,226,-22.827553,-47.265413,02D4,0A,C48F,BDE802,0,1,19871.4,,,,01000111,Carregamento on,Normal,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:22:03.289,,865209077288026,6,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:22:03.292,2025-10-09 14:18:42.000,865209077288026,7,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,324,-22.822411,-47.268053,02D4,0A,C48F,BDE802,0,1,19872.6,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:22:03.307,2025-10-09 14:11:49.000,865209077288026,8,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,10,,0,324,-22.824184,-47.266698,02D4,0A,C48F,0DBDE115,0,1,19872.0,17-15:35:35,4,
+2025-10-09 14:22:04.335,2025-10-09 14:14:49.000,865209077288026,9,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,10,,10,140,-22.822669,-47.266813,02D4,0A,C48F,0DBDE816,0,1,19872.4,17-15:38:35,4,
+2025-10-09 14:22:05.297,2025-10-09 14:17:49.000,865209077288026,10,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,9,,33,330,-22.823440,-47.267316,02D4,0A,C48F,0DBDDB03,0,1,19872.5,17-15:41:35,4,
+2025-10-09 14:26:00.813,,865209077288026,11,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:30:01.182,,865209077288026,12,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:31:40.583,2025-10-09 14:31:39.000,865209077288026,13,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,0,-22.822411,-47.268053,02D4,0A,C48F,BDE802,0,1,19872.6,,,,01000111,Carregamento on,Normal,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:31:41.517,,865209077288026,14,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:31:43.451,,865209077288026,15,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:34:00.810,,865209077288026,16,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:34:40.756,2025-10-09 14:34:39.000,865209077288026,17,Posicionamento por tempo em movimento,77,GT06V4,557,14.50,,1,10,,55,326,-22.819604,-47.265640,02D4,0A,C48F,0DBDDB03,0,1,19873.3,17-15:45:27,4,
+2025-10-09 14:35:54.683,2025-10-09 14:35:54.000,865209077288026,18,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,88,30,-22.815387,-47.259844,02D4,0A,C48F,BDE80C,0,1,19874.4,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:35:59.582,2025-10-09 14:35:59.000,865209077288026,19,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,68,30,-22.814624,-47.259333,02D4,0A,C48F,BDE80C,0,1,19874.5,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:36:06.605,2025-10-09 14:36:06.000,865209077288026,20,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,84,26,-22.813424,-47.258569,02D4,0A,C48F,BDDB0D,0,1,19874.7,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:36:47.898,2025-10-09 14:36:47.000,865209077288026,21,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,69,88,-22.807176,-47.252084,02D4,0A,C48F,BDDB0B,0,1,19875.7,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:37:18.681,2025-10-09 14:37:18.000,865209077288026,22,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,84,60,-22.806073,-47.245982,02D4,0A,C557,C83415,0,1,19876.3,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:37:32.710,2025-10-09 14:37:32.000,865209077288026,23,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,68,56,-22.804682,-47.243489,02D4,0A,C557,C83415,0,1,19876.6,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:37:40.606,2025-10-09 14:37:39.000,865209077288026,24,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,9,,63,68,-22.804193,-47.242351,02D4,0A,C557,0DC83415,0,1,19876.7,17-15:48:27,4,
+2025-10-09 14:38:00.720,,865209077288026,25,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:38:42.774,2025-10-09 14:38:42.000,865209077288026,26,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,91,54,-22.798471,-47.234107,02D4,0A,C48F,C80C16,0,1,19877.7,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:39:17.747,2025-10-09 14:39:17.000,865209077288026,27,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,65,64,-22.793244,-47.227804,02D4,0A,C48F,C80C16,0,1,19878.6,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:40:40.810,2025-10-09 14:40:39.000,865209077288026,28,Posicionamento por tempo em movimento,77,GT06V4,557,12.60,,1,11,,0,188,-22.798184,-47.223938,02D4,0A,C48F,0DBDDE15,0,1,19879.4,17-15:51:27,4,
+2025-10-09 14:40:54.790,2025-10-09 14:40:53.000,865209077288026,29,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,188,-22.798216,-47.223898,02D4,0A,C48F,BDDE15,0,1,19879.4,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:40:55.691,,865209077288026,30,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:41:53.792,2025-10-09 14:41:53.000,865209077288026,31,Modo econômico,77,GT06V4,557,12.70,,0,12,,0,188,-22.798216,-47.223898,02D4,0A,C48F,0DBDDE15,0,1,19879.4,17-15:51:41,4,
+2025-10-09 14:42:00.793,,865209077288026,32,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:43:27.852,2025-10-09 14:43:27.000,865209077288026,33,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,188,-22.798216,-47.223898,02D4,0A,C48F,BDDE15,0,1,19879.4,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:43:28.749,,865209077288026,34,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:44:27.030,2025-10-09 14:44:26.000,865209077288026,35,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,93,142,-22.803009,-47.220684,02D4,0A,C557,C85617,0,1,19880.0,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:44:40.785,2025-10-09 14:44:40.000,865209077288026,36,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,61,138,-22.805218,-47.218591,02D4,0A,C48F,BDDE16,0,1,19880.4,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:46:00.988,,865209077288026,37,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:46:27.947,2025-10-09 14:46:26.000,865209077288026,38,Posicionamento por tempo em movimento,77,GT06V4,557,12.70,,1,9,,44,18,-22.803282,-47.212142,02D4,0A,C48F,0DBDDE16,0,1,19881.7,17-15:54:41,4,
+2025-10-09 14:46:53.033,2025-10-09 14:46:52.000,865209077288026,39,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,97,20,-22.799929,-47.210800,02D4,0A,C48F,BDDE16,0,1,19882.1,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:47:00.872,2025-10-09 14:47:00.000,865209077288026,40,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,41,20,-22.798536,-47.210240,02D4,0A,C557,C85617,0,1,19882.3,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:49:27.992,2025-10-09 14:49:26.000,865209077288026,41,Posicionamento por tempo em movimento,77,GT06V4,557,13.70,,1,10,,25,70,-22.798013,-47.201742,02D4,0A,C48F,0DC12C01,0,1,19883.4,17-15:57:41,4,
+2025-10-09 14:50:00.996,,865209077288026,42,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,03
+2025-10-09 14:51:49.048,2025-10-09 14:51:48.000,865209077288026,43,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,322,-22.795182,-47.196871,02D4,0A,C48F,C12C15,0,1,19884.4,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:51:50.078,,865209077288026,44,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:52:48.091,2025-10-09 14:52:47.000,865209077288026,45,Modo econômico,77,GT06V4,557,12.70,,0,10,,0,322,-22.795182,-47.196871,02D4,0A,C48F,0DC12C01,0,1,19884.4,17-16:00:02,4,
+2025-10-09 14:54:01.088,,865209077288026,46,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:54:49.114,,865209077288026,47,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:58:01.309,,865209077288026,48,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:58:36.202,2025-10-09 14:58:35.000,865209077288026,49,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,322,-22.795182,-47.196871,02D4,0A,C48F,C12C01,0,1,19884.4,,,,01000111,Carregamento on,Normal,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 14:58:37.265,,865209077288026,50,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 14:58:39.137,,865209077288026,51,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:02:47.354,,865209077288026,53,Login,77,GT06V4,,,,,,,,,,,
+2025-10-09 15:02:48.941,,865209077288026,55,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:02:51.969,2025-10-09 15:01:34.000,865209077288026,52,Posicionamento por tempo em movimento,77,GT06V4,557,14.20,,1,9,,0,226,-22.794880,-47.203613,02D4,0A,C48F,0DC12C33,0,1,19885.4,17-16:03:02,4,
+2025-10-09 15:03:04.968,,865209077288026,56,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:03:43.992,2025-10-09 15:03:42.000,865209077288026,57,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,198,-22.798464,-47.207916,02D4,0A,C557,C8560C,0,1,19886.1,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 15:03:44.986,,865209077288026,58,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:04:43.522,2025-10-09 15:04:41.000,865209077288026,59,Modo econômico,77,GT06V4,557,12.90,,0,9,,0,198,-22.798464,-47.207916,02D4,0A,C557,0DC8560C,0,1,19886.1,17-16:05:09,4,
+2025-10-09 15:06:43.404,,865209077288026,60,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:07:04.407,,865209077288026,61,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:11:04.514,,865209077288026,62,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:15:04.606,,865209077288026,63,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:19:04.727,,865209077288026,64,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:23:04.804,,865209077288026,65,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:27:48.731,,865209077288026,67,Login,77,GT06V4,,,,,,,,,,,
+2025-10-09 15:27:50.751,,865209077288026,68,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:31:50.068,,865209077288026,69,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:35:50.137,,865209077288026,70,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:39:50.214,,865209077288026,71,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:43:50.321,,865209077288026,72,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:47:50.428,,865209077288026,73,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:51:50.529,,865209077288026,74,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:55:50.607,,865209077288026,75,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 15:59:51.519,,865209077288026,76,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:03:44.797,2025-10-09 16:03:41.000,865209077288026,77,Modo econômico,77,GT06V4,557,12.80,,0,9,,0,198,-22.798464,-47.207916,02D4,0A,C557,0DC8560C,0,1,19886.1,17-16:05:09,4,
+2025-10-09 16:03:51.598,,865209077288026,78,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:07:50.958,,865209077288026,79,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:11:51.097,,865209077288026,80,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:15:51.119,,865209077288026,81,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:19:52.020,,865209077288026,82,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:23:51.357,,865209077288026,83,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:27:51.421,,865209077288026,84,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:31:52.203,,865209077288026,85,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:33:40.541,2025-10-09 16:33:37.000,865209077288026,86,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,198,-22.798464,-47.207916,02D4,0A,C557,C8560C,0,1,19886.1,,,,01000111,Carregamento on,Normal,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:33:41.467,,865209077288026,87,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:33:43.470,,865209077288026,88,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:34:25.621,2025-10-09 16:34:24.000,865209077288026,89,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,348,-22.798480,-47.208987,02D4,0A,C557,C8560C,0,1,19886.2,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:34:26.495,,865209077288026,90,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:35:24.635,2025-10-09 16:35:24.000,865209077288026,91,Modo econômico,77,GT06V4,557,12.80,,0,9,,0,348,-22.798480,-47.208987,02D4,0A,C557,0DC8560C,0,1,19886.2,17-16:05:54,4,
+2025-10-09 16:35:51.801,,865209077288026,92,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:37:25.649,,865209077288026,93,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:37:32.598,2025-10-09 16:37:31.000,865209077288026,94,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,348,-22.798480,-47.208987,02D4,0A,C557,C8560C,0,1,19886.2,,,,01000111,Carregamento on,Normal,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:37:33.578,,865209077288026,95,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:37:35.597,,865209077288026,96,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:39:51.735,,865209077288026,97,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:40:32.736,2025-10-09 16:40:31.000,865209077288026,98,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,8,,10,44,-22.795000,-47.203653,02D4,0A,C557,0DC85616,0,1,19887.1,17-16:08:54,4,
+2025-10-09 16:43:01.819,2025-10-09 16:43:01.000,865209077288026,99,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,142,-22.795218,-47.196840,02D4,0A,C48F,C12C15,0,1,19888.1,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:43:02.879,,865209077288026,100,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:43:51.822,,865209077288026,101,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:44:00.794,2025-10-09 16:44:00.000,865209077288026,102,Modo econômico,77,GT06V4,557,13.00,,0,8,,0,142,-22.795218,-47.196840,02D4,0A,C48F,0DC12C0B,0,1,19888.1,17-16:11:23,4,
+2025-10-09 16:44:53.858,2025-10-09 16:44:53.000,865209077288026,103,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,142,-22.795218,-47.196840,02D4,0A,C48F,C12C0B,0,1,19888.1,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:44:54.886,,865209077288026,104,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:47:55.783,,865209077288026,105,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:47:55.847,2025-10-09 16:47:52.000,865209077288026,106,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,8,,32,224,-22.794662,-47.203351,02D4,0A,C48F,0DC4C333,0,1,19889.1,17-16:14:23,4,
+2025-10-09 16:50:54.338,2025-10-09 16:50:52.000,865209077288026,107,Posicionamento por tempo em movimento,77,GT06V4,557,14.50,,1,8,,54,202,-22.798749,-47.210387,02D4,0A,C557,0DC85616,0,1,19890.2,17-16:17:23,4,
+2025-10-09 16:51:52.006,,865209077288026,108,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:52:51.073,2025-10-09 16:52:50.000,865209077288026,109,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,95,136,-22.810567,-47.213547,02D4,0A,C48F,C4C303,0,1,19891.7,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:53:54.076,2025-10-09 16:53:52.000,865209077288026,110,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,8,,74,120,-22.818296,-47.201698,02D4,0A,C48F,0DC4C302,0,1,19893.3,17-16:20:23,4,
+2025-10-09 16:54:15.121,2025-10-09 16:54:14.000,865209077288026,111,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,68,112,-22.820498,-47.197551,02D4,0A,C48F,C4C302,0,1,19893.7,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:54:30.142,2025-10-09 16:54:29.000,865209077288026,112,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,96,118,-22.821807,-47.195044,02D4,0A,C48F,C4C302,0,1,19894.0,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:54:41.178,2025-10-09 16:54:40.000,865209077288026,113,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,72,120,-22.822967,-47.192907,02D4,0A,C48F,C4C302,0,1,19894.3,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:54:53.231,2025-10-09 16:54:51.000,865209077288026,114,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,86,118,-22.824064,-47.190996,02D4,0A,C48F,C4C302,0,1,19894.5,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:55:52.293,,865209077288026,115,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:56:40.260,2025-10-09 16:56:39.000,865209077288026,116,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,66,138,-22.840569,-47.170196,02D4,0A,C557,BDDF17,0,1,19897.3,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:56:54.133,2025-10-09 16:56:52.000,865209077288026,117,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,9,,50,138,-22.841816,-47.169009,02D4,0A,C557,0DC0DC17,0,1,19897.5,17-16:23:21,4,
+2025-10-09 16:57:28.171,2025-10-09 16:57:27.000,865209077288026,118,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,84,136,-22.846333,-47.164733,02D4,0A,C557,C0CD03,0,1,19898.2,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:58:45.257,2025-10-09 16:58:44.000,865209077288026,119,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,71,140,-22.857687,-47.147916,02D4,0A,C557,C0CD02,0,1,19900.3,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:59:02.223,2025-10-09 16:59:01.000,865209077288026,120,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,86,88,-22.859929,-47.145800,02D4,0A,C557,BD9316,0,1,19900.6,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 16:59:52.356,,865209077288026,121,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 16:59:54.158,2025-10-09 16:59:52.000,865209077288026,122,Posicionamento por tempo em movimento,77,GT06V4,557,14.50,,1,8,,87,134,-22.865009,-47.135298,02D4,0A,C557,0DBD930C,0,1,19901.9,17-16:26:21,4,
+2025-10-09 17:02:54.319,2025-10-09 17:02:52.000,865209077288026,123,Posicionamento por tempo em movimento,77,GT06V4,557,14.50,,1,10,,94,164,-22.896867,-47.110556,02D4,0A,C3C7,0DBDA417,0,1,19906.4,17-16:29:21,4,
+2025-10-09 17:03:52.449,,865209077288026,124,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:04:12.347,2025-10-09 17:04:11.000,865209077288026,125,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,73,140,-22.913142,-47.099978,02D4,0A,C3C7,C42517,0,1,19908.4,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 17:04:21.599,2025-10-09 17:04:19.000,865209077288026,126,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,88,140,-22.914384,-47.098871,02D4,0A,C3C7,C4250D,0,1,19908.6,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 17:04:59.414,2025-10-09 17:04:58.000,865209077288026,127,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,70,130,-22.921193,-47.092622,02D4,0A,C3C7,BD2001,0,1,19909.6,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 17:05:12.870,2025-10-09 17:05:11.000,865209077288026,128,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,82,126,-22.922747,-47.090498,02D4,0A,C3C7,C42516,0,1,19909.9,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 17:05:50.297,2025-10-09 17:05:49.000,865209077288026,129,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,69,128,-22.927193,-47.083667,02D4,0A,C3C7,BDD303,0,1,19910.7,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 17:05:54.358,2025-10-09 17:05:52.000,865209077288026,130,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,9,,65,126,-22.927504,-47.083231,02D4,0A,C3C7,0DBDD303,0,1,19910.8,17-16:32:20,4,
+2025-10-09 17:07:54.929,,865209077288026,131,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:08:57.192,2025-10-09 17:08:52.000,865209077288026,132,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,9,,65,18,-22.921340,-47.066107,02D4,0A,C3C7,0DBD7201,0,1,19913.8,17-16:35:20,4,
+2025-10-09 17:11:52.538,,865209077288026,133,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:11:54.446,2025-10-09 17:11:52.000,865209077288026,134,Posicionamento por tempo em movimento,77,GT06V4,557,14.20,,1,8,,0,192,-22.910889,-47.056720,02D4,0A,C3C7,0DBD0C0D,0,1,19915.5,17-16:38:20,4,
+2025-10-09 17:14:49.635,2025-10-09 17:14:48.000,865209077288026,135,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,230,-22.911482,-47.059129,02D4,0A,C3C7,BD6A34,0,1,19916.0,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 17:14:50.642,,865209077288026,136,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:15:48.642,2025-10-09 17:15:48.000,865209077288026,137,Modo econômico,77,GT06V4,557,12.90,,0,6,,0,230,-22.911482,-47.059129,02D4,0A,C3C7,0DBD6A16,0,1,19916.0,17-16:41:15,4,
+2025-10-09 17:15:52.577,,865209077288026,138,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:17:49.680,,865209077288026,139,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:19:52.737,,865209077288026,140,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:23:52.858,,865209077288026,141,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:27:53.349,,865209077288026,142,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:31:53.022,,865209077288026,143,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:35:53.136,,865209077288026,144,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:39:53.231,,865209077288026,145,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:43:53.350,,865209077288026,146,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:47:53.423,,865209077288026,147,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:51:53.524,,865209077288026,148,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:55:53.618,,865209077288026,149,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 17:59:53.699,,865209077288026,150,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:03:53.832,,865209077288026,151,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:07:53.900,,865209077288026,152,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:11:54.000,,865209077288026,153,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:14:51.095,2025-10-09 18:14:48.000,865209077288026,154,Modo econômico,77,GT06V4,557,13.00,,0,6,,0,230,-22.911482,-47.059129,02D4,0A,C3C7,0DBD6A33,0,1,19916.0,17-16:41:15,4,
+2025-10-09 18:15:54.070,,865209077288026,155,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:19:54.234,,865209077288026,156,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:23:54.275,,865209077288026,157,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:27:54.390,,865209077288026,158,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:31:54.562,,865209077288026,159,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:35:54.573,,865209077288026,160,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:39:54.688,,865209077288026,161,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:42:36.730,2025-10-09 18:42:33.000,865209077288026,162,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,230,-22.911482,-47.059129,02D4,0A,C3C7,BD6A15,0,1,19916.0,,,,01000111,Carregamento on,Normal,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 18:42:37.670,,865209077288026,163,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:42:39.665,,865209077288026,164,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:43:54.779,,865209077288026,165,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:45:36.823,2025-10-09 18:45:35.000,865209077288026,166,Posicionamento por tempo em movimento,77,GT06V4,557,14.50,,1,11,,26,196,-22.910356,-47.062738,02D4,0A,C3C7,0DBD6A15,0,1,19916.8,17-16:44:15,4,
+2025-10-09 18:47:54.905,,865209077288026,167,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:48:36.891,2025-10-09 18:48:35.000,865209077288026,168,Posicionamento por tempo em movimento,77,GT06V4,557,14.00,,1,9,,0,258,-22.917751,-47.065591,02D4,0A,C3C7,0DBD7201,0,1,19917.7,17-16:47:15,4,
+2025-10-09 18:51:36.993,2025-10-09 18:51:35.000,865209077288026,169,Posicionamento por tempo em movimento,77,GT06V4,557,14.00,,1,11,,0,148,-22.915153,-47.069458,02D4,0A,C3C7,0DBD6A17,0,1,19919.0,17-16:50:15,4,
+2025-10-09 18:51:48.978,2025-10-09 18:51:47.000,865209077288026,170,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,148,-22.915153,-47.069444,02D4,0A,C3C7,BD6A35,0,1,19919.0,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 18:51:49.886,,865209077288026,171,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:51:54.888,,865209077288026,172,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:52:48.257,2025-10-09 18:52:47.000,865209077288026,173,Modo econômico,77,GT06V4,557,12.90,,0,11,,0,148,-22.915153,-47.069444,02D4,0A,C3C7,0DBD6A35,0,1,19919.0,17-16:50:27,4,
+2025-10-09 18:54:49.271,,865209077288026,174,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:55:55.353,,865209077288026,175,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 18:59:55.237,,865209077288026,176,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:03:55.289,,865209077288026,177,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,03
+2025-10-09 19:07:56.370,,865209077288026,178,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:11:55.531,,865209077288026,179,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:15:55.635,,865209077288026,180,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:19:55.740,,865209077288026,181,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,03
+2025-10-09 19:23:55.796,,865209077288026,182,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:27:56.225,,865209077288026,183,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:31:56.787,,865209077288026,184,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:35:56.070,,865209077288026,185,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:39:56.362,,865209077288026,186,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:43:56.289,,865209077288026,187,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:47:56.543,,865209077288026,188,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:51:50.546,2025-10-09 19:51:47.000,865209077288026,189,Modo econômico,77,GT06V4,557,12.90,,0,11,,0,148,-22.915153,-47.069444,02D4,0A,C3C7,0DBD6A35,0,1,19919.0,17-16:50:27,4,
+2025-10-09 19:51:56.376,,865209077288026,190,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:55:56.581,,865209077288026,191,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 19:59:56.695,,865209077288026,192,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:03:56.845,,865209077288026,193,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:07:57.028,,865209077288026,194,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:11:56.987,,865209077288026,195,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:15:57.086,,865209077288026,196,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:19:57.935,,865209077288026,197,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:23:57.279,,865209077288026,198,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:27:57.530,,865209077288026,199,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:31:57.874,,865209077288026,200,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:35:57.624,,865209077288026,201,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:39:57.816,,865209077288026,202,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:43:14.757,2025-10-09 20:43:11.000,865209077288026,203,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,148,-22.915153,-47.069444,02D4,0A,C3C7,C56702,0,1,19919.0,,,,01000111,Carregamento on,Normal,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 20:43:15.635,,865209077288026,204,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:43:17.651,,865209077288026,205,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:43:57.767,,865209077288026,206,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:46:14.983,2025-10-09 20:46:13.000,865209077288026,207,Posicionamento por tempo em movimento,77,GT06V4,557,12.40,,1,12,,45,232,-22.920331,-47.075551,02D4,0A,C3C7,0DBDD333,0,1,19920.3,17-16:53:27,4,
+2025-10-09 20:47:57.831,,865209077288026,208,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:49:14.905,2025-10-09 20:49:13.000,865209077288026,209,Posicionamento por tempo em movimento,77,GT06V4,557,12.40,,1,10,,0,136,-22.924438,-47.081360,02D4,0A,C3C7,0DBDD303,0,1,19921.1,17-16:56:27,4,
+2025-10-09 20:51:21.931,2025-10-09 20:51:21.000,865209077288026,210,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,0,336,-22.925587,-47.080702,02D4,0A,C3C7,BDD303,0,1,19921.4,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 20:51:22.860,,865209077288026,211,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:51:57.964,,865209077288026,212,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:52:20.960,2025-10-09 20:52:20.000,865209077288026,213,Modo econômico,77,GT06V4,557,12.60,,0,14,,0,336,-22.925587,-47.080702,02D4,0A,C3C7,0DBDD303,0,1,19921.4,17-16:58:34,4,
+2025-10-09 20:54:22.013,,865209077288026,214,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:55:58.041,,865209077288026,215,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 20:59:58.186,,865209077288026,216,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:03:58.315,,865209077288026,217,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:07:58.389,,865209077288026,218,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:11:58.445,,865209077288026,219,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:15:58.545,,865209077288026,220,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:19:58.656,,865209077288026,221,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:23:58.759,,865209077288026,222,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:27:58.843,,865209077288026,223,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:31:58.941,,865209077288026,224,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:34:13.050,2025-10-09 21:34:10.000,865209077288026,225,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,336,-22.925587,-47.080702,02D4,0A,C3C7,BDD317,0,1,19921.4,,,,01000111,Carregamento on,Normal,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 21:34:13.979,,865209077288026,226,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:34:16.077,,865209077288026,227,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:35:59.045,,865209077288026,228,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:37:13.053,2025-10-09 21:37:11.000,865209077288026,229,Posicionamento por tempo em movimento,77,GT06V4,557,12.60,,1,11,,26,52,-22.922382,-47.076378,02D4,0A,C3C7,0DBDD30B,0,1,19922.1,17-17:01:33,4,
+2025-10-09 21:39:59.657,,865209077288026,230,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:40:13.153,2025-10-09 21:40:11.000,865209077288026,231,Posicionamento por tempo em movimento,77,GT06V4,557,14.10,,1,10,,55,78,-22.918107,-47.063782,02D4,0A,C3C7,0DC8250B,0,1,19923.7,17-17:04:33,4,
+2025-10-09 21:43:13.942,2025-10-09 21:43:11.000,865209077288026,232,Posicionamento por tempo em movimento,77,GT06V4,557,14.10,,1,10,,16,66,-22.911249,-47.059871,02D4,0A,C3C7,0DBD6A16,0,1,19925.3,17-17:07:33,4,
+2025-10-09 21:43:59.256,,865209077288026,233,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:45:23.269,2025-10-09 21:45:21.000,865209077288026,234,IGF,77,GT06V4,,,Bateria extremamente alta,0,12,,7,304,-22.911304,-47.058933,02D4,0A,C3C7,BD6A33,0,1,19925.5,,,,01000100,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-09 21:45:24.717,,865209077288026,235,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:46:22.316,2025-10-09 21:46:21.000,865209077288026,236,Modo econômico,77,GT06V4,557,13.00,,0,6,,7,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A16,0,1,19925.5,17-17:09:42,4,
+2025-10-09 21:47:59.345,,865209077288026,237,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:48:23.388,,865209077288026,238,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:51:59.425,,865209077288026,239,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:55:59.541,,865209077288026,240,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 21:59:59.619,,865209077288026,241,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:03:59.743,,865209077288026,242,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:07:59.789,,865209077288026,243,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:11:59.896,,865209077288026,244,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:16:00.582,,865209077288026,245,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:20:00.107,,865209077288026,246,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:24:00.196,,865209077288026,247,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:28:00.296,,865209077288026,248,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:32:00.382,,865209077288026,249,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:36:00.514,,865209077288026,250,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:40:01.262,,865209077288026,251,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:44:00.681,,865209077288026,252,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:45:24.743,2025-10-09 22:45:21.000,865209077288026,253,Modo econômico,77,GT06V4,557,12.80,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A33,0,1,19925.5,17-17:09:42,4,
+2025-10-09 22:48:00.785,,865209077288026,254,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:52:00.886,,865209077288026,255,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 22:56:00.994,,865209077288026,256,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:00:01.079,,865209077288026,257,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:04:01.185,,865209077288026,258,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:08:01.276,,865209077288026,259,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:12:01.464,,865209077288026,260,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:16:01.478,,865209077288026,261,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:20:01.566,,865209077288026,262,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:24:01.685,,865209077288026,263,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:28:01.784,,865209077288026,264,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:32:01.879,,865209077288026,265,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:36:01.961,,865209077288026,266,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:40:02.045,,865209077288026,267,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:44:02.137,,865209077288026,268,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:45:26.175,2025-10-09 23:45:21.000,865209077288026,269,Modo econômico,77,GT06V4,557,12.90,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A16,0,1,19925.5,17-17:09:42,4,
+2025-10-09 23:48:02.232,,865209077288026,270,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:52:02.336,,865209077288026,271,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-09 23:56:02.435,,865209077288026,272,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:00:02.547,,865209077288026,273,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:04:02.625,,865209077288026,274,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:08:02.750,,865209077288026,275,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:12:02.827,,865209077288026,276,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:16:02.920,,865209077288026,277,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:20:03.007,,865209077288026,278,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:24:03.085,,865209077288026,279,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:28:03.311,,865209077288026,280,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:32:03.306,,865209077288026,281,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:36:03.432,,865209077288026,282,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:40:03.504,,865209077288026,283,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:44:04.770,,865209077288026,284,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:45:27.616,2025-10-10 00:45:21.000,865209077288026,285,Modo econômico,77,GT06V4,557,12.80,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A16,0,1,19925.5,17-17:09:42,4,
+2025-10-10 00:48:03.687,,865209077288026,286,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:52:03.792,,865209077288026,287,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 00:56:03.904,,865209077288026,288,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:00:04.950,,865209077288026,289,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:04:04.064,,865209077288026,290,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:08:04.161,,865209077288026,291,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:12:04.260,,865209077288026,292,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:16:04.371,,865209077288026,293,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:20:04.472,,865209077288026,294,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:24:04.548,,865209077288026,295,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:28:04.670,,865209077288026,296,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:32:04.755,,865209077288026,297,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:36:04.842,,865209077288026,298,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:40:04.934,,865209077288026,299,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:44:05.037,,865209077288026,300,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:45:29.079,2025-10-10 01:45:21.000,865209077288026,301,Modo econômico,77,GT06V4,557,12.70,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A16,0,1,19925.5,17-17:09:42,4,
+2025-10-10 01:48:05.127,,865209077288026,302,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:52:05.259,,865209077288026,303,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 01:56:05.335,,865209077288026,304,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:00:05.432,,865209077288026,305,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:04:05.525,,865209077288026,306,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:08:05.909,,865209077288026,307,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:12:05.713,,865209077288026,308,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:16:05.811,,865209077288026,309,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:20:05.926,,865209077288026,310,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:24:06.000,,865209077288026,311,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:28:06.103,,865209077288026,312,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:32:06.213,,865209077288026,313,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:36:06.285,,865209077288026,314,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:40:06.396,,865209077288026,315,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:44:06.489,,865209077288026,316,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:45:30.554,2025-10-10 02:45:21.000,865209077288026,317,Modo econômico,77,GT06V4,557,12.70,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A16,0,1,19925.5,17-17:09:42,4,
+2025-10-10 02:48:06.591,,865209077288026,318,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:52:06.715,,865209077288026,319,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 02:56:06.768,,865209077288026,320,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:00:06.909,,865209077288026,321,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:04:06.973,,865209077288026,322,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:08:07.064,,865209077288026,323,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:12:07.173,,865209077288026,324,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:16:07.266,,865209077288026,325,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:20:07.355,,865209077288026,326,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:24:08.051,,865209077288026,327,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:28:07.572,,865209077288026,328,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:32:07.646,,865209077288026,329,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:36:07.740,,865209077288026,330,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:40:07.849,,865209077288026,331,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:44:07.949,,865209077288026,332,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:45:31.990,2025-10-10 03:45:21.000,865209077288026,333,Modo econômico,77,GT06V4,557,12.80,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A16,0,1,19925.5,17-17:09:42,4,
+2025-10-10 03:48:08.057,,865209077288026,334,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:52:08.151,,865209077288026,335,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 03:56:08.257,,865209077288026,336,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:00:08.341,,865209077288026,337,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:04:08.452,,865209077288026,338,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:08:08.536,,865209077288026,339,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:12:08.622,,865209077288026,340,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:16:08.721,,865209077288026,341,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:20:08.802,,865209077288026,342,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:24:08.938,,865209077288026,343,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:28:09.018,,865209077288026,344,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:32:09.104,,865209077288026,345,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:36:09.228,,865209077288026,346,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:40:09.295,,865209077288026,347,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:44:09.394,,865209077288026,348,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:45:33.465,2025-10-10 04:45:21.000,865209077288026,349,Modo econômico,77,GT06V4,557,12.80,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A16,0,1,19925.5,17-17:09:42,4,
+2025-10-10 04:48:09.500,,865209077288026,350,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:52:10.008,,865209077288026,351,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 04:56:09.699,,865209077288026,352,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:00:09.821,,865209077288026,353,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:04:09.879,,865209077288026,354,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:08:09.977,,865209077288026,355,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:12:10.095,,865209077288026,356,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:16:10.186,,865209077288026,357,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:20:10.279,,865209077288026,358,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:24:10.375,,865209077288026,359,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:28:10.472,,865209077288026,360,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:32:10.561,,865209077288026,361,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:36:10.691,,865209077288026,362,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:40:10.786,,865209077288026,363,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:44:10.865,,865209077288026,364,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:45:34.904,2025-10-10 05:45:21.000,865209077288026,365,Modo econômico,77,GT06V4,557,12.70,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A16,0,1,19925.5,17-17:09:42,4,
+2025-10-10 05:48:10.975,,865209077288026,366,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:52:11.078,,865209077288026,367,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 05:56:11.176,,865209077288026,368,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:00:11.269,,865209077288026,369,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:04:11.376,,865209077288026,370,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:08:11.455,,865209077288026,371,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:12:11.546,,865209077288026,372,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:16:11.641,,865209077288026,373,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:20:11.752,,865209077288026,374,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:24:11.854,,865209077288026,375,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:28:11.945,,865209077288026,376,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:32:12.031,,865209077288026,377,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:36:12.129,,865209077288026,378,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:40:12.210,,865209077288026,379,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:44:12.331,,865209077288026,380,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:45:36.359,2025-10-10 06:45:21.000,865209077288026,381,Modo econômico,77,GT06V4,557,12.80,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A16,0,1,19925.5,17-17:09:42,4,
+2025-10-10 06:48:12.427,,865209077288026,382,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:52:12.542,,865209077288026,383,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 06:56:12.660,,865209077288026,384,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:00:12.716,,865209077288026,385,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:04:12.804,,865209077288026,386,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:08:12.901,,865209077288026,387,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:12:13.024,,865209077288026,388,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:16:13.094,,865209077288026,389,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:20:13.734,,865209077288026,390,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:24:13.293,,865209077288026,391,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:28:13.847,,865209077288026,392,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:32:13.496,,865209077288026,393,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:36:13.626,,865209077288026,394,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:40:14.235,,865209077288026,395,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:44:13.814,,865209077288026,396,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:45:37.835,2025-10-10 07:45:21.000,865209077288026,397,Modo econômico,77,GT06V4,557,12.70,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A33,0,1,19925.5,17-17:09:42,4,
+2025-10-10 07:48:14.006,,865209077288026,398,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:52:13.964,,865209077288026,399,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 07:56:14.747,,865209077288026,400,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:00:14.804,,865209077288026,401,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:04:14.262,,865209077288026,402,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:08:14.395,,865209077288026,403,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:12:14.447,,865209077288026,404,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:16:14.545,,865209077288026,405,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:20:14.632,,865209077288026,406,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:24:14.764,,865209077288026,407,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:28:14.839,,865209077288026,408,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:32:14.999,,865209077288026,409,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:36:15.019,,865209077288026,410,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:40:15.128,,865209077288026,411,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:44:15.239,,865209077288026,412,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:45:39.272,2025-10-10 08:45:21.000,865209077288026,413,Modo econômico,77,GT06V4,557,12.70,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A33,0,1,19925.5,17-17:09:42,4,
+2025-10-10 08:48:15.333,,865209077288026,414,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:52:15.423,,865209077288026,415,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 08:56:15.546,,865209077288026,416,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:00:15.664,,865209077288026,417,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:04:15.752,,865209077288026,418,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:08:15.832,,865209077288026,419,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:12:15.922,,865209077288026,420,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:16:16.008,,865209077288026,421,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:20:16.088,,865209077288026,422,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:24:16.224,,865209077288026,423,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:28:16.320,,865209077288026,424,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:32:16.425,,865209077288026,425,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:36:16.512,,865209077288026,426,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:40:16.557,,865209077288026,427,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:44:16.670,,865209077288026,428,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:45:40.780,2025-10-10 09:45:21.000,865209077288026,429,Modo econômico,77,GT06V4,557,12.60,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A33,0,1,19925.5,17-17:09:42,4,
+2025-10-10 09:48:16.780,,865209077288026,430,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:52:16.866,,865209077288026,431,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 09:56:16.966,,865209077288026,432,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:00:17.078,,865209077288026,433,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:04:17.190,,865209077288026,434,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:08:17.350,,865209077288026,435,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:12:17.364,,865209077288026,436,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:16:17.472,,865209077288026,437,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:20:17.593,,865209077288026,438,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:24:17.729,,865209077288026,439,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:28:17.731,,865209077288026,440,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:32:17.827,,865209077288026,441,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:36:17.909,,865209077288026,442,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:40:18.035,,865209077288026,443,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:44:18.124,,865209077288026,444,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:45:42.197,2025-10-10 10:45:21.000,865209077288026,445,Modo econômico,77,GT06V4,557,12.70,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A33,0,1,19925.5,17-17:09:42,4,
+2025-10-10 10:48:18.222,,865209077288026,446,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:52:18.318,,865209077288026,447,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 10:56:18.435,,865209077288026,448,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:00:18.579,,865209077288026,449,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:04:18.633,,865209077288026,450,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:08:18.707,,865209077288026,451,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:12:18.796,,865209077288026,452,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:16:19.498,,865209077288026,453,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:20:19.023,,865209077288026,454,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:24:19.137,,865209077288026,455,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:28:19.202,,865209077288026,456,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:32:19.290,,865209077288026,457,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:36:19.384,,865209077288026,458,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:40:19.477,,865209077288026,459,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:44:19.563,,865209077288026,460,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:45:43.583,2025-10-10 11:45:21.000,865209077288026,461,Modo econômico,77,GT06V4,557,12.60,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A33,0,1,19925.5,17-17:09:42,4,
+2025-10-10 11:48:20.545,,865209077288026,462,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:52:20.034,,865209077288026,463,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 11:56:19.880,,865209077288026,464,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:00:19.965,,865209077288026,465,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:04:20.068,,865209077288026,466,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:08:20.162,,865209077288026,467,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:12:20.430,,865209077288026,468,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:16:21.006,,865209077288026,469,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:20:20.471,,865209077288026,470,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:24:20.584,,865209077288026,471,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:28:20.654,,865209077288026,472,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:32:20.810,,865209077288026,473,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:36:21.313,,865209077288026,474,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:40:20.957,,865209077288026,475,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:44:21.046,,865209077288026,476,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:45:45.073,2025-10-10 12:45:21.000,865209077288026,477,Modo econômico,77,GT06V4,557,12.60,,0,6,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,0DBD6A33,0,1,19925.5,17-17:09:42,4,
+2025-10-10 12:48:21.122,,865209077288026,478,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:52:21.240,,865209077288026,479,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 12:56:21.341,,865209077288026,480,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:00:21.446,,865209077288026,481,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:04:21.528,,865209077288026,482,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:08:21.823,,865209077288026,483,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:12:21.724,,865209077288026,484,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:16:21.832,,865209077288026,485,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:20:21.992,,865209077288026,486,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:23:54.001,2025-10-10 13:23:30.000,865209077288026,487,IGN,77,GT06V4,,,Bateria extremamente alta,1,12,,0,304,-22.911304,-47.058933,02D4,0A,C3C7,BD6A33,0,1,19925.5,,,,01000111,Carregamento on,Normal,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-10 13:23:54.912,,865209077288026,488,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:23:57.518,,865209077288026,489,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:24:22.038,,865209077288026,490,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:26:54.156,2025-10-10 13:26:52.000,865209077288026,491,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,11,,56,286,-22.918064,-47.065044,02D4,0A,C3C7,0DC82515,0,1,19926.9,17-17:12:42,4,
+2025-10-10 13:28:26.012,,865209077288026,492,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:29:28.151,2025-10-10 13:29:27.000,865209077288026,493,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,95,264,-22.931449,-47.073573,02D4,0A,C3C7,BDD30C,0,1,19928.8,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-10 13:29:54.186,2025-10-10 13:29:52.000,865209077288026,494,Posicionamento por tempo em movimento,77,GT06V4,557,12.30,,1,11,,98,304,-22.929480,-47.079107,02D4,0A,C3C7,0DBDD303,0,1,19929.5,17-17:15:42,4,
+2025-10-10 13:31:03.200,2025-10-10 13:31:02.000,865209077288026,495,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,62,322,-22.918362,-47.094996,02D4,0A,C3C7,BD200B,0,1,19931.5,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-10 13:31:13.114,2025-10-10 13:31:12.000,865209077288026,496,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,84,322,-22.916938,-47.096320,02D4,0A,C3C7,C4250C,0,1,19931.6,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-10 13:31:23.179,2025-10-10 13:31:22.000,865209077288026,497,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,65,320,-22.915404,-47.097653,02D4,0A,C3C7,C4250C,0,1,19931.9,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-10 13:32:22.223,,865209077288026,498,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:32:54.154,2025-10-10 13:32:52.000,865209077288026,499,Posicionamento por tempo em movimento,77,GT06V4,557,14.00,,1,11,,69,320,-22.905604,-47.106222,02D4,0A,C3C7,0DC1A90B,0,1,19933.3,17-17:18:42,4,
+2025-10-10 13:33:45.244,2025-10-10 13:33:44.000,865209077288026,500,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,81,344,-22.898267,-47.110000,02D4,0A,C3C7,BDA403,0,1,19934.2,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-10 13:35:54.671,2025-10-10 13:35:52.000,865209077288026,501,Posicionamento por tempo em movimento,77,GT06V4,557,14.40,,1,13,,105,312,-22.870922,-47.128089,02D4,0A,C557,0DC7B715,0,1,19937.8,17-17:21:42,4,
+2025-10-10 13:36:22.217,,865209077288026,502,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 13:37:09.239,2025-10-10 13:37:07.000,865209077288026,503,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,59,320,-22.859889,-47.142867,02D4,0A,C557,C7B70D,0,1,19939.7,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-10 13:37:20.339,2025-10-10 13:37:19.000,865209077288026,504,Excesso de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,83,312,-22.858047,-47.143942,02D4,0A,C557,BD930C,0,1,19940.0,,,,01110110,Carregamento on,Desativado,110,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-10 13:38:32.701,2025-10-10 13:38:28.000,865209077288026,505,Retorno de velocidade,77,GT06V4,,,Bateria extremamente alta,1,12,,66,302,-22.849818,-47.159422,02D4,0A,C557,C0CD0C,0,1,19941.8,,,,01000110,Carregamento on,Desativado,Normal,Rastreamento de GPS ativo,Oléo e eletricidade inativo
+2025-10-10 13:38:54.379,2025-10-10 13:38:52.000,865209077288026,506,Posicionamento por tempo em movimento,77,GT06V4,557,12.40,,1,11,,49,8,-22.847447,-47.160187,02D4,0A,C557,0DC0DC03,0,1,19942.1,17-17:24:42,4,
+2025-10-10 13:40:22.429,,865209077288026,507,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04

@@ -1,0 +1,204 @@
+Tipo,Evento_Desemparelhado,Data/Hora Evento,Sequência,Tipo Mensagem,Observação
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:03:47,387,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:05:07, seq: 388)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:03:47,387,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:05:07,388,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:05:07,388,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:19:57, seq: 393)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:19:57,393,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:22:29, seq: 394)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:19:57,393,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:22:29,394,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:25:22, seq: 396)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:22:29,394,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:25:22,396,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:25:22,396,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:26:04, seq: 397)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:26:04,397,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:26:04,397,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:27:54, seq: 399)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:27:54,399,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:27:54,399,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:28:40, seq: 400)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:28:40,400,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:28:40,400,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:29:34, seq: 401)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:29:34,401,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:30:17, seq: 402)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:29:34,401,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:30:17,402,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:30:49, seq: 404)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:30:17,402,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:30:49,404,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:31:35, seq: 405)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:30:49,404,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:31:35,405,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:31:35,405,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:34:21, seq: 406)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:34:21,406,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:35:10, seq: 408)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:34:21,406,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:35:10,408,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:36:00, seq: 409)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:35:10,408,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:36:00,409,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:36:00,409,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:36:51, seq: 410)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:36:51,410,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:36:51,410,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:37:19, seq: 411)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:37:19,411,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:48:07, seq: 415)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:37:19,411,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:48:07,415,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:50:57, seq: 417)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:48:07,415,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:50:57,417,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:51:43, seq: 418)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:50:57,417,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:51:43,418,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:52:03, seq: 419)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:51:43,418,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:52:03,419,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:52:22, seq: 420)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:52:03,419,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:52:22,420,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:52:22,420,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 10:53:33, seq: 422)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 10:53:33,422,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 10:53:33,422,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:01:39, seq: 425)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:01:39,425,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:01:39,425,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:06:48, seq: 433)"
+Ignição,IGF sem IGN anterior,2025-07-28 11:03:25,427,IGF,IGF encontrado sem IGN correspondente anterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:06:48,433,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:06:48,433,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:15:16, seq: 436)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:15:16,436,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:18:53, seq: 438)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:15:16,436,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:18:53,438,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:20:55, seq: 439)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:18:53,438,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:20:55,439,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:21:14, seq: 440)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:20:55,439,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:21:14,440,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:21:14,440,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:23:08, seq: 442)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:23:08,442,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:24:33, seq: 443)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:23:08,442,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:24:33,443,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:26:00, seq: 444)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:24:33,443,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:26:00,444,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:26:19, seq: 445)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:26:00,444,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:26:19,445,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:26:38, seq: 447)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:26:19,445,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:26:38,447,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:27:35, seq: 448)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:26:38,447,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:27:35,448,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:27:35,448,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:30:20, seq: 449)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:30:20,449,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:31:12, seq: 451)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:30:20,449,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:31:12,451,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:31:39, seq: 452)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:31:12,451,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:31:39,452,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:31:39,452,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:34:39, seq: 454)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:34:39,454,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:35:17, seq: 455)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:34:39,454,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:35:17,455,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:42:13, seq: 457)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:35:17,455,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:42:13,457,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:42:13,457,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:43:41, seq: 459)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:43:41,459,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:43:41,459,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:44:03, seq: 460)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:44:03,460,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:44:03,460,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:45:42, seq: 461)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:45:42,461,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:45:42,461,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:47:34, seq: 463)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:47:34,463,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:47:34,463,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:50:02, seq: 464)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:50:02,464,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 11:59:32, seq: 468)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:50:02,464,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 11:59:32,468,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 12:00:34, seq: 469)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 11:59:32,468,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 12:00:34,469,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 12:17:25, seq: 481)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 12:00:34,469,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 12:17:25,481,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 12:19:28, seq: 483)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 12:17:25,481,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 12:19:28,483,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 12:25:14, seq: 485)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 12:19:28,483,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 12:25:14,485,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 12:25:14,485,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 12:26:01, seq: 486)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 12:26:01,486,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 12:28:49, seq: 488)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 12:26:01,486,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 12:28:49,488,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:26:12, seq: 510)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 12:28:49,488,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:26:12,510,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:26:12,510,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:26:57, seq: 512)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:26:57,512,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:29:09, seq: 513)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:26:57,512,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:29:09,513,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:29:09,513,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:30:15, seq: 514)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:30:15,514,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:30:15,514,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:31:09, seq: 516)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:31:09,516,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:31:09,516,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:34:04, seq: 517)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:34:04,517,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:34:24, seq: 518)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:34:04,517,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:34:24,518,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:36:15, seq: 520)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:34:24,518,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:36:15,520,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:36:15,520,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:36:37, seq: 521)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:36:37,521,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:37:07, seq: 522)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:36:37,521,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:37:07,522,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:37:07,522,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:42:35, seq: 524)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:42:35,524,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:42:35,524,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:44:23, seq: 526)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:44:23,526,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:44:23,526,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:46:15, seq: 527)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:46:15,527,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:47:09, seq: 529)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:46:15,527,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:47:09,529,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:47:09,529,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:48:32, seq: 530)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:48:32,530,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:48:48, seq: 531)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:48:32,530,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:48:48,531,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 13:56:57, seq: 534)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:48:48,531,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 13:56:57,534,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 13:56:57,534,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:00:00, seq: 536)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:00:00,536,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:00:00,536,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:03:01, seq: 538)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:03:01,538,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:04:22, seq: 539)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:03:01,538,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:04:22,539,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:04:22,539,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:05:44, seq: 540)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:05:44,540,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:05:44,540,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:09:12, seq: 542)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:09:12,542,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:09:12,542,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:09:54, seq: 543)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:09:54,543,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:10:25, seq: 544)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:09:54,543,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:10:25,544,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:19:58, seq: 548)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:10:25,544,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:19:58,548,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:20:29, seq: 549)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:19:58,548,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:20:29,549,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:21:26, seq: 550)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:20:29,549,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:21:26,550,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:24:22, seq: 552)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:21:26,550,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:24:22,552,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:25:27, seq: 554)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:24:22,552,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:25:27,554,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:27:06, seq: 556)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:25:27,554,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:27:06,556,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:27:06,556,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:27:39, seq: 557)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:27:39,557,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:28:03, seq: 558)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:27:39,557,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:28:03,558,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:29:59, seq: 559)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:28:03,558,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:29:59,559,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:29:59,559,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:30:42, seq: 560)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:30:42,560,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:30:42,560,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:31:12, seq: 562)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:31:12,562,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:32:11, seq: 563)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:31:12,562,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:32:11,563,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:32:11,563,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:38:24, seq: 565)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:38:24,565,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:40:58, seq: 567)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:38:24,565,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:40:58,567,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:42:00, seq: 568)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:40:58,567,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:42:00,568,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:52:17, seq: 572)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:42:00,568,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:52:17,572,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:56:19, seq: 574)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:52:17,572,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:56:19,574,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:56:19,574,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:57:55, seq: 575)"
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:57:55,575,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:58:57, seq: 577)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:57:55,575,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:58:57,577,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 14:59:57, seq: 578)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:58:57,577,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 14:59:57,578,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 15:00:24, seq: 579)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 14:59:57,578,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-28 15:00:24,579,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-28 15:00:57, seq: 582)"
+Velocidade,Excesso sem Retorno posterior,2025-07-28 15:00:24,579,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Ignição,IGN consecutivos - possível perda de IGF,2025-07-29 06:10:07,334,IGN,"IGN seguido de outro IGN (2025-07-30 09:54:51, seq: 652)"
+Ignição,IGN sem IGF posterior,2025-07-29 06:10:07,334,IGN,IGN sem IGF correspondente posterior
+Velocidade,Excesso sem Retorno posterior,2025-07-29 07:25:30,385,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-29 07:25:30,385,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-29 12:18:25, seq: 581)"
+Velocidade,Excesso sem Retorno posterior,2025-07-29 12:18:25,581,Excesso de velocidade,Excesso de velocidade sem Retorno posterior
+Velocidade,Excessos consecutivos - possível perda de Retorno,2025-07-29 12:18:25,581,Excesso de velocidade,"Excesso seguido de outro Excesso (2025-07-29 12:33:45, seq: 597)"

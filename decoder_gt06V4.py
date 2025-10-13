@@ -59,7 +59,15 @@ def apply_coordinate_signs(latitude, longitude, course_info):
         
     return latitude, longitude
 
-def parser_gt06V4(hex_data, imei=None):
+def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
+    """
+    Parser GT06V4 modificado para aceitar timestamp personalizado
+    
+    Args:
+        hex_data: dados hexadecimais da mensagem
+        imei: IMEI do dispositivo
+        timestamp_inclusao: timestamp personalizado do CSV (opcional)
+    """
     protocol_number = hex_data[6:8]
 
     try:
@@ -72,7 +80,12 @@ def parser_gt06V4(hex_data, imei=None):
             p += 2
             protocol_number = hex_data[p:p+2]
             p += 2
-            imei = hex_data[p:p+16]
+            imei_raw = hex_data[p:p+16]  # Extrai 8 bytes (16 chars hex)
+            # Remove o zero inicial se existir (IMEI tem 15 dígitos)
+            if imei_raw.startswith('0') and len(imei_raw) == 16:
+                imei = imei_raw[1:]  # Remove primeiro caractere
+            else:
+                imei = imei_raw
             p += 16
             serial_number = hex_data[p:p+4]
             serial_number = int(serial_number, 16)
@@ -93,8 +106,11 @@ def parser_gt06V4(hex_data, imei=None):
             linha = f",{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,," \
                     f",,,,,,," \
 
-            # Grava no arquivo CSV
-            record_decoded_organized(imei, linha) 
+            # Grava no arquivo CSV usando timestamp personalizado
+            if timestamp_inclusao:
+                record_decoded_organized_with_timestamp(imei, linha, timestamp_inclusao)
+            else:
+                record_decoded_organized(imei, linha) 
 
 
         elif protocol_number == "13":  # Heartbeat
@@ -155,8 +171,11 @@ def parser_gt06V4(hex_data, imei=None):
             linha = f",{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power}," \
                     f",,,,,,,,,,,,,,,,{gsm_signal}" \
 
-            # Grava no arquivo CSV
-            record_decoded_organized(imei, linha) 
+            # Grava no arquivo CSV usando timestamp personalizado
+            if timestamp_inclusao:
+                record_decoded_organized_with_timestamp(imei, linha, timestamp_inclusao)
+            else:
+                record_decoded_organized(imei, linha) 
        
         elif protocol_number == "32":  # GPS Data
             print("\nTemporizadas")
@@ -265,13 +284,15 @@ def parser_gt06V4(hex_data, imei=None):
             print("checksum: " + checksum)
             print("tail: " + tail)
 
-             # Prepara linha formatada para CSV
-            # data_inclusao = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            # Prepara linha formatada para CSV
             linha = f"{converter_para_brasil(send_time_utc)},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,{rat_suffix},{external_power_str},," \
                     f"{acc},{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},{tempo_formatado},{rat_prefix}," \
 
-            # Grava no arquivo CSV
-            record_decoded_organized(imei, linha) 
+            # Grava no arquivo CSV usando timestamp personalizado
+            if timestamp_inclusao:
+                record_decoded_organized_with_timestamp(imei, linha, timestamp_inclusao)
+            else:
+                record_decoded_organized(imei, linha) 
 
             
         elif protocol_number == "16":  # GPS Data with additional info
@@ -384,7 +405,7 @@ def parser_gt06V4(hex_data, imei=None):
                 Tipo_mensagem = "Desconexão de bateria"
                 print("Desconexão de bateria")
             elif alarm_prefix == "06":
-                Tipo_mensagem = "Exesso de velocidade"
+                Tipo_mensagem = "Excesso de velocidade"
                 print("Excesso de velocidade")
             elif alarm_prefix == "16":
                 Tipo_mensagem = "Retorno de velocidade"
@@ -447,13 +468,15 @@ def parser_gt06V4(hex_data, imei=None):
             print("Checksum: " + checksum)    
             print("Tail: " + tail)
 
-             # Prepara linha formatada para CSV
-            # data_inclusao = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            # Prepara linha formatada para CSV
             linha = f"{converter_para_brasil(send_time_utc)},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power},{acc}," \
                     f"{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},,,,{terminal_status},{charging_status},{normal_working},{alarm_status},{gps_status},{gas_oil_status}" \
  
-            # Grava no arquivo CSV
-            record_decoded_organized(imei, linha)
+            # Grava no arquivo CSV usando timestamp personalizado
+            if timestamp_inclusao:
+                record_decoded_organized_with_timestamp(imei, linha, timestamp_inclusao)
+            else:
+                record_decoded_organized(imei, linha)
 
         elif protocol_number == "15":  
             print("\nAck comando")
@@ -477,6 +500,8 @@ def parser_gt06V4(hex_data, imei=None):
             print(f"Server flag: {server_flag}")
             print(f"Resposta: {resposta_ascii}")
 
+            # Para protocolo 15, pode não precisar salvar no CSV ou pode ter um tratamento específico
+            # Mantenha a lógica original ou adicione tratamento se necessário
 
         else:   
             print(f"Protocolo {protocol_number} ainda não implementado.")

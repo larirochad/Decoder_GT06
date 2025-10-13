@@ -1,0 +1,10 @@
+Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,Alimentação Externa,Bateria interna interna,Analog Input Status,Satélites,Duração da Ignição,Velocidade,Azimuth,Latitude,Longitude,MCC,MNC,LAC,Cell ID,Realtime positioning,GPS valido,Hodômetro Total,Horímetro Total,Tipo de Rede,Qualidade do sinal de GSM,Terminal information,Carregamento,Funcionamento,Alarmes internos,Rastramento,Gás/Oléo
+2025-10-10 15:50:53.697,,0869412074480093,28,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,03
+2025-10-10 15:50:54.739,2025-10-10 15:50:04.000,0869412074480093,26,Modo econômico,77,GT06V4,557,12.30,,0,0,,0,0,-29.996542,-51.197596,02D4,06,C4AF,0AB71A34,0,0,4865.4,05-12:03:13,4,
+2025-10-10 15:52:38.466,,0869412074480093,31,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 15:55:14.815,,0869412074480093,37,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,03
+2025-10-10 15:59:14.958,,0869412074480093,38,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,03
+2025-10-10 16:03:15.059,,0869412074480093,39,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,03
+2025-10-10 16:07:15.218,,0869412074480093,40,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,03
+2025-10-10 16:11:15.400,,0869412074480093,41,Heartbeat,77,GT06V4,,,Bateria extremamente alta,,,,,,,,,,,,,,,,,04
+2025-10-10 16:14:29.262,2025-10-10 16:14:24.000,0869412074480093,43,Modo econômico,77,GT06V4,557,12.30,,0,1,,0,0,-29.996542,-51.197596,02D4,06,C4AF,0AB71A34,0,0,4865.4,05-12:03:13,4,

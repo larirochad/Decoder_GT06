@@ -1,0 +1,71 @@
+====================================================================================================
+📋 RELATÓRIO COMPLETO DE ANÁLISE
+====================================================================================================
+📊 RESUMO GERAL:
+   📁 Total de Registros: 1790
+   📅 Período: 2025-10-03 00:51:18 até 2025-10-07 23:57:09
+
+🚗 INFORMAÇÕES DO HODÔMETRO:
+   🏁 Primeiro KM válido: 4859.80 km (2025-10-03 00:51:18.000)
+   🏆 Último KM válido: 4865.40 km (2025-10-07 23:57:09.000)
+   📏 Distância percorrida no período: 5.60 km
+   📊 Total de registros válidos de hodômetro: 126
+
+🛣️ INFORMAÇÕES DAS VIAGENS:
+   ✅ Viagens completas (IGN→IGF): 4
+   🔴 IGN sem IGF correspondente: 0
+   🟠 IGF sem IGN anterior: 0
+   🚗 DETALHES DAS VIAGENS COMPLETAS:
+       1. Início: 2025-10-03 15:43:53
+          Fim:    2025-10-03 15:45:02
+          Duração: 00:01:09 (Seq: 75→78)
+       2. Início: 2025-10-03 15:49:44
+          Fim:    2025-10-03 15:51:11
+          Duração: 00:01:27 (Seq: 82→85)
+       3. Início: 2025-10-07 09:18:30
+          Fim:    2025-10-07 09:41:01
+          Duração: 00:22:31 (Seq: 356→6)
+       4. Início: 2025-10-07 09:42:21
+          Fim:    2025-10-07 09:46:53
+          Duração: 00:04:32 (Seq: 10→14)
+
+🔄 REBOOTS DETECTADOS:
+   🔢 Total: 7
+   📅 2025-10-03 11:07:20.792000 - Seq: 395 → 0
+   📅 2025-10-04 11:08:13.289000 - Seq: 228 → 0
+   📅 2025-10-05 11:08:58.060000 - Seq: 384 → 0
+   📅 2025-10-06 11:09:47.328000 - Seq: 384 → 0
+   📅 2025-10-07 09:21:05.235000 - Seq: 358 → 0
+   📅 2025-10-07 09:33:24.154000 - Seq: 8 → 0
+   📅 2025-10-07 12:57:30.563000 - Seq: 66 → 0
+
+⏰ ANOMALIAS DE INTERVALOS:
+   🎯 Posicionamento (esperado 3min ±2s): 4 anomalias
+   💤 Modo Econômico (esperado 1h ±2s): 7 anomalias
+   📍 DETALHES COMPLETOS - Posicionamento:
+        1. Seq 2 (2025-10-07 09:19:53): 00:01:23 (diff: -97s)
+        2. Seq 3 (2025-10-07 09:23:46): 00:03:53 (diff: 53s)
+        3. Seq 2 (2025-10-07 09:29:13): -1:56:26 (diff: -394s)
+        4. Seq 3 (2025-10-07 09:36:05): 00:06:52 (diff: 232s)
+   💤 DETALHES COMPLETOS - Modo Econômico:
+        1. Seq 13 (2025-10-03 11:52:06): 01:00:48 (diff: 48s)
+        2. Seq 12 (2025-10-04 11:51:59): 12:00:49 (diff: 39649s)
+        3. Seq 12 (2025-10-05 11:52:47): 01:00:48 (diff: 48s)
+        4. Seq 12 (2025-10-06 11:53:36): 01:00:49 (diff: 49s)
+        5. Seq 9 (2025-10-07 09:42:01): 00:01:00 (diff: -3540s)
+        6. Seq 2 (2025-10-07 12:56:51): 00:09:59 (diff: -3001s)
+        7. Seq 17 (2025-10-07 13:57:09): 01:00:18 (diff: 18s)
+
+🔥 ANOMALIAS DE IGNIÇÃO:
+   🚨 Total: 0 anomalias
+🏃 ANOMALIAS DE VELOCIDADE:
+   🚨 Total: 0 anomalias
+
+📝 MENSAGENS EM LOG APÓS IGF:
+   🚨 Total de ocorrências: 0
+
+🎉 ANÁLISE CONCLUÍDA!
+📁 Todos os arquivos foram salvos em: relatorios/
+====================================================================================================
+✅ RELATÓRIO FINALIZADO COM SUCESSO!
+====================================================================================================

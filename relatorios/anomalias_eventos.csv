@@ -1,0 +1,3 @@
+Tipo_Anomalia,Sequencia_1,Sequencia_2,Data_Hora_1,Data_Hora_2,Diferenca_Tempo,Status
+IGN Consecutivos,258,5,2025-10-04 16:42:23,2025-10-04 17:02:35,0 days 00:20:12,Possível perda de evento intermediário
+IGF Consecutivos,30,31,2025-10-04 17:08:06,2025-10-04 17:08:41,0 days 00:00:35,Possível perda de evento intermediário
