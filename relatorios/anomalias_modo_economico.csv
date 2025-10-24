@@ -1,5 +1,0 @@
-Sequencia,Data_Hora,Tempo_Esperado,Tempo_Real,Diferenca_Segundos,Status
-2,2025-10-03 04:51:26,01:00:00,00:35:37,-1463.0,Fora da tolerância (±2s)
-3,2025-10-04 08:35:11,01:00:00,27:43:45,96225.0,Fora da tolerância (±2s)
-18,2025-10-04 09:34:12,01:00:00,00:59:01,-59.0,Fora da tolerância (±2s)
-29,2025-10-04 10:06:36,01:00:00,00:32:24,-1656.0,Fora da tolerância (±2s)

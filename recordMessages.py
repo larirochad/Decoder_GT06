@@ -1,7 +1,9 @@
 import datetime
-import pytz
-from datetime import datetime
+from datetime import datetime, timedelta
 import os
+import pandas as pd
+from decoder_gt06V4 import *
+from datetime import datetime, timedelta
 
 def record_raw(file_name, source, msg):
     curr_time = datetime.now()
@@ -11,10 +13,7 @@ def record_raw(file_name, source, msg):
         f.close()
 
 def record_decoded_by_imei_with_timestamp(imei, msg, timestamp_inclusao=None):
-    """
-    Função modificada para aceitar timestamp de inclusão personalizado
-    Se timestamp_inclusao não for fornecido, usa o atual
-    """
+
     # Cria o nome do arquivo baseado no IMEI
     file_name = f"{imei}_decoded.csv"
     
@@ -34,7 +33,7 @@ def record_decoded_by_imei_with_timestamp(imei, msg, timestamp_inclusao=None):
                 d.write(f"{date_time_inclusao},{msg}\n")
         else:
             # Se não existe, cria o arquivo com cabeçalho
-            print(f"Criando novo arquivo de log para IMEI: {imei}")
+            # print(f"Criando novo arquivo de log para IMEI: {imei}")
             with open(file_name, "w", encoding='utf-8') as d:
                 # Escreve o cabeçalho
                 d.write("Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,"
@@ -65,7 +64,6 @@ def record_decoded_by_imei(imei, msg):
     """
     record_decoded_by_imei_with_timestamp(imei, msg, None)
 
-# Função para manter compatibilidade (usa IMEI genérico se não especificado)
 def record_decoded(file_name, msg, imei=None, timestamp_inclusao=None):
     """
     Função original mantida para compatibilidade
@@ -89,7 +87,7 @@ def record_decoded(file_name, msg, imei=None, timestamp_inclusao=None):
             d.write(date_time + msg + "\n")
             d.close()
     except:
-        print("Arquivo não existe, um novo log será criado.")
+        # print("Arquivo não existe, um novo log será criado.")
         with open(file_name, "a+") as d:
             d.write("Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,"
                         "Tipo Mensagem,Tipo Dispositivo,Versão Protocolo,Versão Firmware,"
@@ -109,23 +107,15 @@ def record_decoded(file_name, msg, imei=None, timestamp_inclusao=None):
             d.write(f"{date_time},{msg}\n")
             d.close()
 
-def criar_pasta_logs():
-    """
-    Cria uma pasta 'logs' para organizar melhor os arquivos
-    """
-    if not os.path.exists('logs'):
-        os.makedirs('logs')
-        print("Pasta 'logs' criada para organizar os arquivos")
 
 def record_decoded_organized_with_timestamp(imei, msg, timestamp_inclusao=None):
     """
     Versão organizada que salva na pasta logs/ com timestamp personalizado
     """
     # Garante que a pasta existe
-    criar_pasta_logs()
     
     # Cria o nome do arquivo dentro da pasta logs
-    file_name = f"logs/{imei}_decoded.csv"
+    file_name = f"Decoder_GT06/decoded/{imei}_decoded.csv"
     
     try:
         # Verifica se o arquivo já existe
@@ -143,7 +133,7 @@ def record_decoded_organized_with_timestamp(imei, msg, timestamp_inclusao=None):
                 d.write(f"{date_time_inclusao},{msg}\n")
         else:
             # Se não existe, cria o arquivo com cabeçalho
-            print(f"Criando novo arquivo de log para IMEI: {imei} em {file_name}")
+            # print(f"Criando novo arquivo de log para IMEI: {imei} em {file_name}")
             with open(file_name, "w", encoding='utf-8') as d:
                 # Escreve o cabeçalho
                 d.write("Data/Hora Inclusão,Data/Hora Evento,IMEI,Sequência,"
@@ -168,11 +158,7 @@ def record_decoded_organized_with_timestamp(imei, msg, timestamp_inclusao=None):
     except Exception as e:
         print(f"Erro ao escrever no arquivo {file_name}: {e}")
 
-def record_decoded_organized(imei, msg):
-    """
-    Versão original mantida para compatibilidade
-    """
-    record_decoded_organized_with_timestamp(imei, msg, None)
+
 
 def record_combined_message_with_timestamp(file_name, direction, msg_type, hex_data, timestamp_inclusao=None):
     """Grava mensagem no arquivo combinado com timestamp personalizado"""
@@ -193,7 +179,6 @@ def record_combined_message(file_name, direction, msg_type, hex_data):
     """Versão original mantida para compatibilidade"""
     record_combined_message_with_timestamp(file_name, direction, msg_type, hex_data, None)
 
-# Restante das funções originais permanecem inalteradas
 def hex_to_timestamp(hex_value):
     hex_value = str(hex_value)
 
@@ -229,8 +214,6 @@ def hex_to_timestamp(hex_value):
 
     return dt
 
-from datetime import datetime, timedelta
-
 def converter_para_brasil(dt_utc):
     """
     Converte uma data/hora UTC (string ou datetime) para o timezone do Brasil (UTC-3)
@@ -264,24 +247,6 @@ def converter_para_brasil(dt_utc):
     # Retorna com milissegundos
     return dt_brasil.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
 
-    # Agora temos certeza que dt_utc é um objeto datetime
-    # Verificar se o datetime tem timezone definido
-    if dt_utc.tzinfo is None or dt_utc.tzinfo.utcoffset(dt_utc) is None:
-        # Se não tiver timezone, assume que é UTC
-        dt_utc = pytz.UTC.localize(dt_utc)
-    elif dt_utc.tzinfo != pytz.UTC:
-        # Se tiver timezone mas não for UTC, converte para UTC primeiro
-        dt_utc = dt_utc.astimezone(pytz.UTC)
-
-    # Converter para timezone do Brasil
-    timezone_brasil = pytz.timezone('America/Sao_Paulo')
-    dt_brasil = dt_utc.astimezone(timezone_brasil)
-
-    # Formatar conforme solicitado
-    formato_brasil = dt_brasil.strftime("%Y-%m-%d %H:%M:%S")
-
-    return formato_brasil
-
 def separar_partes_comando(command_string):
     # Verifica se existe o caracter ":" na string
     if ":" in command_string:
@@ -307,16 +272,126 @@ def separar_partes_comando(command_string):
         # Retorna erro se não encontrar ":"
         return False, "Comando não contém o caracter ':'", "", ""
 
-# Exemplo de uso
-'''comando = "8674886297271:AT+GTFRI=gv58cg,1,0,,0,0000,0000,60,60,1000,1000,,0,3600,00068102,0,,0,FFFF$"
-valido, mensagem, primeira_parte, segunda_parte = separar_partes_comando(comando)
+def process_gt06_folder(input_path, output_path):
+    
+    # Cria pasta de saída se não existir
+    if not os.path.exists(output_path):
+        os.makedirs(output_path)
+    
+    # Valida pasta de entrada
+    if not os.path.exists(input_path) or not os.path.isdir(input_path):
+        print(f"Erro: Pasta de entrada inválida: {input_path}")
+        return False
+    
+    # Lista arquivos CSV
+    csv_files = [f for f in os.listdir(input_path) 
+                 if f.endswith('.csv') and not f.endswith('_decoded.csv')]
+    
+    if not csv_files:
+        print("Aviso: Nenhum arquivo CSV encontrado na pasta")
+        return False
+    
+    total_files = len(csv_files)
+    processed_files = 0
+    
+    # Processa cada arquivo CSV
+    for csv_file in csv_files:
+        input_file = os.path.join(input_path, csv_file)
+        file_imei = os.path.splitext(csv_file)[0]
+        
+        # Remove zero à esquerda se existir
+        if file_imei.startswith('0') and len(file_imei) == 16:
+            file_imei = file_imei[1:]
+        
+        output_file = os.path.join(output_path, f"{file_imei}_decoded.csv")
+        
+        try:
+            # Lê o arquivo CSV
+            df = pd.read_csv(input_file)
+            
+            # Verifica colunas obrigatórias
+            if 'lmsmensagem' not in df.columns or 'lmsdatahorainc' not in df.columns:
+                print(f"Erro: Colunas obrigatórias não encontradas em {csv_file}")
+                continue
+            
+            # Remove linhas vazias
+            df_clean = df.dropna(subset=['lmsmensagem'])
+            df_clean = df_clean[df_clean['lmsmensagem'].str.strip() != '']
+            
+            total_rows = len(df)
+            valid_rows = len(df_clean)
+            
+            # Remove arquivo de saída se existir
+            if os.path.exists(output_file):
+                os.remove(output_file)
+            
+            # Processa cada linha
+            for index, row in df_clean.iterrows():
+                try:
+                    hex_message = str(row['lmsmensagem']).strip().strip('"\'')
+                    timestamp_inc = str(row['lmsdatahorainc']).strip()
+                    hex_data = hex_message.replace(" ", "").upper()
+                    
+                    # Valida hexadecimal
+                    if not (hex_data and len(hex_data) % 2 == 0):
+                        try:
+                            int(hex_data, 16)
+                        except ValueError:
+                            continue
+                    
+                    # Formata timestamp
+                    formatted_timestamp = timestamp_inc
+                    for fmt in ["%Y-%m-%d %H:%M:%S.%f", "%Y-%m-%d %H:%M:%S", 
+                               "%d/%m/%Y %H:%M:%S", "%Y/%m/%d %H:%M:%S"]:
+                        try:
+                            dt = datetime.strptime(timestamp_inc, fmt)
+                            formatted_timestamp = dt.strftime("%Y-%m-%d %H:%M:%S.%f")[:-3]
+                            break
+                        except ValueError:
+                            continue
+                    
+                    # Analisa mensagem usando o parser
+                    if hex_data.startswith("7878") and hex_data.endswith("0D0A"):
+                        try:
+                            # Chama o parser para processar a mensagem
+                            result = parser_gt06V4(hex_data, file_imei, formatted_timestamp)
+                            
+                            # CORREÇÃO: Extrai a string 'dados' do dicionário retornado pelo parser
+                            if result and 'dados' in result:
+                                dados_string = result['dados']
+                                
+                                # Grava usando a função organizada
+                                record_decoded_organized_with_timestamp(file_imei, dados_string, formatted_timestamp)
+                            else:
+                                # Se não retornou dados válidos, cria uma entrada básica
+                                dados_basicos = f",{file_imei},,,Protocolo não decodificado,,,,,,,,,,,,,,,,,,,,,,,"
+                                record_decoded_organized_with_timestamp(file_imei, dados_basicos, formatted_timestamp)
+                                
+                        except Exception as e:
+                            print(f"Erro no parser para mensagem {hex_data}: {e}")
+                            # Em caso de erro, grava uma entrada de erro
+                            dados_erro = f",{file_imei},,,Erro no parser: {str(e)},,,,,,,,,,,,,,,,,,,,,,,"
+                            record_decoded_organized_with_timestamp(file_imei, dados_erro, formatted_timestamp)
+                            continue
+                
+                except Exception as e:
+                    print(f"Erro ao processar linha: {e}")
+                    continue
+            
+            processed_files += 1
+            print(f"Processado: {csv_file} -> {os.path.basename(output_file)}")
+        
+        except Exception as e:
+            print(f"Erro ao processar {csv_file}: {e}")
+    print("Processamento concluído")
 
-if valido:
-    print(f"Comando válido: {mensagem}")
-    print(f"Primeira parte: {primeira_parte}")
-    print(f"Segunda parte: {segunda_parte}")
-else:
-    print(f"Comando inválido: {mensagem}")
-    if primeira_parte or segunda_parte:
-        print(f"Primeira parte: {primeira_parte}")
-        print(f"Segunda parte: {segunda_parte}")'''
+    # print(f"Processamento concluído: {processed_files}/{total_files} arquivos processados")
+    return True
+
+
+# Exemplo de uso
+if __name__ == "__main__":
+    input = 'Decoder_GT06/logs'
+    output = 'Decoder_GT06/decoded'
+    # Processa a pasta
+    process_gt06_folder(input, output)

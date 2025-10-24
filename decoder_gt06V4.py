@@ -1,38 +1,22 @@
-# decoder_gt06V4.py
-from recordMessages import * 
+from recordMessages import hex_to_timestamp, converter_para_brasil
 from datetime import timedelta
 
 def decode_course_info(course_hex):
     course_MSB = int(course_hex[0:2], 16)
     course_LSB = int(course_hex[2:4], 16)
 
-    msb_bin = bin(course_MSB)[2:].zfill(8)  # Binário com 8 bits
-    lsb_bin = bin(course_LSB)[2:].zfill(8)  # Binário com 8 bits
+    msb_bin = bin(course_MSB)[2:].zfill(8)
+    lsb_bin = bin(course_LSB)[2:].zfill(8)
 
-    """
-    Baseado no protocolo GT06V4 oficial:
-    BYTE_1 (bits 15-8):
-    - Bit 7: 0 (reservado)
-    - Bit 6: 0 (reservado)  
-    - Bit 5: GPS real-time/differential positioning (0=realtime, 1=differential)
-    - Bit 4: GPS having been positioning or not (1=positioned, 0=not positioned)
-    - Bit 3: East/West Longitude (0=East/+, 1=West/-)
-    - Bit 2: North/South Latitude (0=South/-, 1=North/+)
-    - Bits 1-0: Course bits altos
+    course_bin = msb_bin + lsb_bin
     
-    BYTE_2 (bits 7-0): Course bits baixos (0-360°)
-    """
-    course_bin = msb_bin + lsb_bin  # Concatena os dois bytes em binário
-    # print(f"course_bin: {course_bin}")  # Debug: Exibe o binário completo
-    # BYTE_1 (bits 15-8) - primeiro byte
-    realtime_gps = int(course_bin[2])      # Bit 5 ✔️
-    gps_posicionado = int(course_bin[3])   # Bit 4 ✔️
-    longitude_leste = int(course_bin[4])   # Bit 3 ✔️
-    latitude_norte = int(course_bin[5])    # Bit 2 ✔️
+    realtime_gps = int(course_bin[2])
+    gps_posicionado = int(course_bin[3])
+    longitude_leste = int(course_bin[4])
+    latitude_norte = int(course_bin[5])
 
-    course_bits =   course_bin[6:16]  
-    # print(f"azimulth em bin: {course_bits}")  # Debug: Exibe os bits do curso
-    azimute = int(course_bits, 2)  # Conversão direta para graus (0-360°)
+    course_bits = course_bin[6:16]
+    azimute = int(course_bits, 2)
     
     return {
         'azimute': azimute,
@@ -44,16 +28,11 @@ def decode_course_info(course_hex):
         'course_bits': course_bits
     }
 
-
 def apply_coordinate_signs(latitude, longitude, course_info):
-    """
-    Aplica os sinais corretos à latitude e longitude baseado nos bits do course
-    """
-    # Aplicar sinal da latitude (bit 2): 1=Norte(+), 0=Sul(-)
+    """Aplica os sinais corretos à latitude e longitude"""
     if course_info['latitude_norte'] == 0: 
         latitude = -latitude
     
-    # Aplicar sinal da longitude (bit 3): 0=Leste(+), 1=Oeste(-)  
     if course_info['longitude_leste'] == 1:
         longitude = -longitude
         
@@ -61,62 +40,50 @@ def apply_coordinate_signs(latitude, longitude, course_info):
 
 def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
     """
-    Parser GT06V4 modificado para aceitar timestamp personalizado
+    Parser GT06V4 que retorna dicionário com dados decodificados
     
     Args:
         hex_data: dados hexadecimais da mensagem
         imei: IMEI do dispositivo
         timestamp_inclusao: timestamp personalizado do CSV (opcional)
+        
+    Returns:
+        dict: dicionário com dados decodificados ou None em caso de erro
     """
     protocol_number = hex_data[6:8]
 
     try:
         if protocol_number == "01":  # Login
-            print("\n Login")
+            # print("Login")
             Tipo_mensagem = "Login"
-            inicio = hex_data[0:4]
             p = 4
             length = hex_data[p:p+2]
             p += 2
             protocol_number = hex_data[p:p+2]
             p += 2
-            imei_raw = hex_data[p:p+16]  # Extrai 8 bytes (16 chars hex)
-            # Remove o zero inicial se existir (IMEI tem 15 dígitos)
+            imei_raw = hex_data[p:p+16]
+            
             if imei_raw.startswith('0') and len(imei_raw) == 16:
-                imei = imei_raw[1:]  # Remove primeiro caractere
+                imei = imei_raw[1:]
             else:
                 imei = imei_raw
             p += 16
             serial_number = hex_data[p:p+4]
             serial_number = int(serial_number, 16)
             p += 4
-            checksum = hex_data[p:p+4]
-            p += 4
-            tail = hex_data[p:p+4]
-
-            print(f"# Login Message")
-            print(f"head: {inicio}")                           
-            print(f"length: {int(length, 16)} ({length})")    
-            print(f"protocol_number: {protocol_number}")      
-            print(f"imei: {imei}")                         
-            print(f"Count Number:   {serial_number}")         
-            print(f"checksum: {checksum}")                   
-            print(f"tail: {tail}")                           
-
-            linha = f",{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,," \
-                    f",,,,,,," \
-
-            # Grava no arquivo CSV usando timestamp personalizado
-            if timestamp_inclusao:
-                record_decoded_organized_with_timestamp(imei, linha, timestamp_inclusao)
-            else:
-                record_decoded_organized(imei, linha) 
-
+            
+            return {
+                'tipo': Tipo_mensagem,
+                'imei': imei,
+                'serial': serial_number,
+                'message_type': Tipo_mensagem,
+                'protocol': 'GT06',
+                'dados': f",{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,," + ",,,,,,,"
+            }
 
         elif protocol_number == "13":  # Heartbeat
-            print("\n Heartbeat")
+            # print("Heartbeat")
             Tipo_mensagem = "Heartbeat"
-            inicio = hex_data[0:4]
             p = 4
             length = hex_data[p:p+2]
             p += 2
@@ -133,13 +100,9 @@ def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
             serial_number = hex_data[p:p+4]
             serial_number = int(serial_number, 16)
             p += 4
-            checksum = hex_data[p:p+4]
-            p += 4
-            tail = hex_data[p:p+4]
-            p += 4
             
             external_power = str(external_power)
-           
+            
             if external_power == '00':
                 external_power = "Sem bateria"
             elif external_power == '01':
@@ -157,29 +120,19 @@ def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
             else: 
                 external_power = "Desconhecido"
 
-            print(f"Head: {inicio}")
-            print(f"Length: {int(length, 16)} ({length})")
-            print(f"Protocol_number: {protocol_number}")
-            print(f"Terminal_info: {terminal_info}")
-            print("Bateria: " + str(external_power))
-            print(f"GSM_signal: {gsm_signal}")
-            print(f"Alarm: {alarm}")
-            print("Count Number: " + str({serial_number}))
-            print(f"Checksum: {checksum}")
-            print(f"Tail: {tail}")
-
-            linha = f",{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power}," \
-                    f",,,,,,,,,,,,,,,,{gsm_signal}" \
-
-            # Grava no arquivo CSV usando timestamp personalizado
-            if timestamp_inclusao:
-                record_decoded_organized_with_timestamp(imei, linha, timestamp_inclusao)
-            else:
-                record_decoded_organized(imei, linha) 
+            return {
+                'tipo': Tipo_mensagem,
+                'imei': imei,
+                'serial': serial_number,
+                'message_type': Tipo_mensagem,
+                'protocol': 'GT06',
+                'power': external_power,
+                'gsm': gsm_signal,
+                'dados': f",{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power}," + f",,,,,,,,,,,,,,,,{gsm_signal}"
+            }
        
         elif protocol_number == "32":  # GPS Data
-            print("\nTemporizadas")
-            inicio = hex_data[0:4]
+            # print("Temporizadas")
             p = 4
             length = hex_data[p:p+2]
             p += 2 
@@ -190,20 +143,18 @@ def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
             p += 12 
             gps = hex_data[p:p+2]
             satelites_in_use = int(str(gps[1]), 16)
-   
             p += 2
             latitude = hex_data[p:p+8]
-            latitude = int(latitude, 16) / 1800000  # Convertendo para graus
+            latitude = int(latitude, 16) / 1800000
             p += 8
             longitude = hex_data[p:p+8]
-            longitude = int(longitude, 16) / 1800000  # Convertendo para graus
+            longitude = int(longitude, 16) / 1800000
             p += 8
             speed = hex_data[p:p+2]
             speed = int(speed, 16) 
             p += 2
             
             course = hex_data[p:p+4]
-            # print(f"course: {course}")
             course_info = decode_course_info(course)
             
             latitude, longitude = apply_coordinate_signs(latitude, longitude, course_info)
@@ -225,7 +176,7 @@ def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
             gps_real = hex_data[p:p+2]
             p += 2
             milage = hex_data[p:p+8]
-            milage = int(milage, 16) / 1000  # Convertendo para km
+            milage = int(milage, 16) / 1000
             p += 8
             external_power = hex_data[p:p+4]
             external_power = int(external_power, 16)* 0.01
@@ -248,56 +199,29 @@ def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
             serial_number = hex_data[p:p+4]
             serial_number = int(serial_number, 16) 
             p += 4
-            checksum = hex_data[p:p+4]
-            p += 4
-            tail = hex_data[p:p+4]
-            p += 4
+            
             if acc == 0:
                 Tipo_mensagem = "Modo econômico"
             elif acc == 1:
                 Tipo_mensagem = "Posicionamento por tempo em movimento"
             
-            print("Head:" + inicio) 
-            print("Length: " + str(int(length, 16)))
-            print("Protocol_number: " + protocol_number)    
-            print("Send_time (BR): " + converter_para_brasil(send_time_utc))
-            print("Satélites: " + str(satelites_in_use))
-            print(f"Latitude: {latitude:.6f}")
-            print(f"Longitude: {longitude:.6f} ")
-            print("Speed: " + str(speed))
-            print(f"Course: {course} (Azimute: {course_info['azimute']}°)")
-            print(f"GPS Info Realtime: " + str(course_info['realtime_gps']))
-            print(f"Posicionado: " + str(course_info['gps_posicionado']))
-            print("MCC: " + mcc)
-            print("MNC: " + mnc)
-            print("lac: " + lac)
-            print("cell_id: " + cell_id)    
-            print("acc: " + str(acc))
-            print("data_up: " + data_up)
-            print("gps_real: " + gps_real)
-            print("Serial number: " + str(serial_number))
-            print("milage: " + str(milage))
-            print("external_power: " + str(external_power_str))
-            print("acc_on_time: " + str(tempo_formatado))
-            print("Tipo de rede: " + rat_prefix)
-            print("Versão de Firmware: " + str(rat_suffix))
-            print("checksum: " + checksum)
-            print("tail: " + tail)
+            dados = f"{converter_para_brasil(send_time_utc)},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,{rat_suffix},{external_power_str},," \
+                    f"{acc},{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},{tempo_formatado},{rat_prefix},"
 
-            # Prepara linha formatada para CSV
-            linha = f"{converter_para_brasil(send_time_utc)},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,{rat_suffix},{external_power_str},," \
-                    f"{acc},{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},{tempo_formatado},{rat_prefix}," \
+            return {
+                'tipo': Tipo_mensagem,
+                'imei': imei,
+                'serial': serial_number,
+                'message_type': Tipo_mensagem,
+                'protocol': 'GT06',
+                'latitude': latitude,
+                'longitude': longitude,
+                'speed': speed,
+                'dados': dados
+            }
 
-            # Grava no arquivo CSV usando timestamp personalizado
-            if timestamp_inclusao:
-                record_decoded_organized_with_timestamp(imei, linha, timestamp_inclusao)
-            else:
-                record_decoded_organized(imei, linha) 
-
-            
-        elif protocol_number == "16":  # GPS Data with additional info
-            print("\n Alarm")
-            inicio = hex_data[0:4]
+        elif protocol_number == "16":  # GPS Data with Alarm
+            # print("Alarm")
             p = 4  
             length = hex_data[p:p+2]
             p += 2  
@@ -310,20 +234,18 @@ def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
             satelites_in_use = int(str(gps[0]), 16)
             p += 2
             latitude = hex_data[p:p+8]
-            latitude = int(latitude, 16) / 1800000  # Convertendo para graus
+            latitude = int(latitude, 16) / 1800000
             p += 8
             longitude = hex_data[p:p+8]
-            longitude = int(longitude, 16) / 1800000  # Convertendo para graus
+            longitude = int(longitude, 16) / 1800000
             p += 8
             speed = hex_data[p:p+2]
             speed = int(speed, 16)
             p += 2
             
-            # NOVA IMPLEMENTAÇÃO DO COURSE PARA ALARM
             course = hex_data[p:p+4]
             course_info = decode_course_info(course)
             
-            # Aplicar sinais corretos nas coordenadas
             latitude, longitude = apply_coordinate_signs(latitude, longitude, course_info)
             
             p += 4
@@ -339,12 +261,13 @@ def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
             p += 6
             terminal_status = hex_data[p:p+2]
             terminal_status = bin(int(terminal_status, 16))[2:].zfill(8)
-            normal_working = terminal_status[7]        # Bit0 (menos significativo)
-            acc_status = terminal_status[6]            # Bit1
-            charging_status = terminal_status[5]       # Bit2
-            alarm_status = terminal_status[2:5]        # Bit3~Bit5 (invertido: [4:1:-1])
-            gps_status = terminal_status[1]            # Bit6
-            gas_oil_status = terminal_status[0]     
+            normal_working = terminal_status[7]
+            acc_status = terminal_status[6]
+            charging_status = terminal_status[5]
+            alarm_status = terminal_status[2:5]
+            gps_status = terminal_status[1]
+            gas_oil_status = terminal_status[0]
+            
             if normal_working == '1':
                 normal_working = "Normal"
             elif normal_working == '0':
@@ -376,7 +299,6 @@ def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
             elif gas_oil_status == '0':
                 gas_oil_status = "Oléo e eletricidade inativo"
 
-
             p += 2
             external_power = hex_data[p:p+2]
             p += 2
@@ -390,41 +312,27 @@ def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
             serial_number = hex_data[p:p+4]
             serial_number = int(serial_number, 16) 
             p += 4
-            checksum = hex_data[p:p+4]  
-            p += 4
-            tail = hex_data[p:p+4]
-            p += 4
             
             alarm_str = str(alarm)
-            #print(f"alarm: {alarm_str}")
             alarm_prefix = alarm_str[:2]
             if alarm_prefix == "01":
                 Tipo_mensagem = "Alerta de Pânico"
-                print("Panic alarm")
             elif alarm_prefix == "02":
                 Tipo_mensagem = "Desconexão de bateria"
-                print("Desconexão de bateria")
             elif alarm_prefix == "06":
                 Tipo_mensagem = "Excesso de velocidade"
-                print("Excesso de velocidade")
             elif alarm_prefix == "16":
                 Tipo_mensagem = "Retorno de velocidade"
-                print("retorno de velocidade")
             elif alarm_prefix == "F2":
                 Tipo_mensagem = "Suspeita de acidente"
-                print("Suspeita de acidente")
             elif alarm_prefix == "F3":
                 Tipo_mensagem = "Bloqueio"
-                print("Bloqueio")
             elif alarm_prefix == "F4":  
                 Tipo_mensagem = "Desbloqueio"
-                print("Desbloqueio")
             elif alarm_prefix == "FE":
                 Tipo_mensagem = "IGN"
-                print("GTIGN")
             elif alarm_prefix == "FF":
                 Tipo_mensagem = "IGF"
-                print("GTIGF")
 
             external_power = str(external_power)
             if external_power == '00':
@@ -444,64 +352,25 @@ def parser_gt06V4(hex_data, imei=None, timestamp_inclusao=None):
             else: 
                 external_power = "Desconhecido"
 
-            print("Head: " + inicio)    
-            print("Length: " + str(int(length, 16)) + " (" + length + ")")
-            print("Protocol_number: " + protocol_number)
-            print("Send_time (BR): " + converter_para_brasil(send_time_utc))
-            print("Satélites: " + str(satelites_in_use))
-            print(f"Latitude: {latitude:.6f}" )
-            print(f"Longitude: {longitude:.6f}")
-            print("Speed: " + str(speed))
-            print(f"Course: {course} (Azimute: {course_info['azimute']}°)")
-            print(f"GPS Info Realtime: " + str(course_info['realtime_gps']))
-            print(f"Posicionado: " + str(course_info['gps_posicionado']))
-            print("LBS_Len: " + LBS_Len)
-            print("MCC: " + mcc)
-            print("MNC: " + mnc)
-            print("LAC: " + lac)
-            print("Cell_id: " + cell_id)
-            print("Terminal_status: " + terminal_status)
-            print("External_power: " + str(external_power))
-            print("GMS_signal: " + gsm_signal)
-            print("Milage: " + str(milage))
-            print("Count Number: " + str(serial_number))
-            print("Checksum: " + checksum)    
-            print("Tail: " + tail)
+            dados = f"{converter_para_brasil(send_time_utc)},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power},{acc}," \
+                    f"{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},,,,{terminal_status},{charging_status},{normal_working},{alarm_status},{gps_status},{gas_oil_status}"
 
-            # Prepara linha formatada para CSV
-            linha = f"{converter_para_brasil(send_time_utc)},{imei},{serial_number},{Tipo_mensagem},77,GT06V4,,,{external_power},{acc}," \
-                    f"{satelites_in_use},,{speed},{course_info['azimute']},{latitude:.6f},{longitude:.6f},{mcc},{mnc},{lac},{cell_id},{course_info['realtime_gps']},{course_info['gps_posicionado']},{milage},,,,{terminal_status},{charging_status},{normal_working},{alarm_status},{gps_status},{gas_oil_status}" \
- 
-            # Grava no arquivo CSV usando timestamp personalizado
-            if timestamp_inclusao:
-                record_decoded_organized_with_timestamp(imei, linha, timestamp_inclusao)
-            else:
-                record_decoded_organized(imei, linha)
+            return {
+                'tipo': Tipo_mensagem,
+                'imei': imei,
+                'serial': serial_number,
+                'message_type': Tipo_mensagem,
+                'protocol': 'GT06',
+                'latitude': latitude,
+                'longitude': longitude,
+                'speed': speed,
+                'dados': dados
+            }
 
         elif protocol_number == "15":  
-            print("\nAck comando")
-            inicio = hex_data[0:4]
-            p = 4
-            length = hex_data[p:p+2]
-            p += 2
-            protocol_number = hex_data[p:p+2]
-            p += 2
-            length_comando = hex_data[p:p+2]
-            p += 2
-            server_flag = hex_data[p:p+8]
-            p += 8
-            resposta = hex_data[p:]
-            resposta_ascii = bytes.fromhex(resposta).decode('ascii', errors='ignore')
-
-            print(f"\nHead: {inicio}")
-            print(f"Length: {int(length, 16)} ({length})")  
-            print(f"Protocol_number: {protocol_number}")
-            print(f"Length comando: {int(length_comando, 16)} ({length_comando})")
-            print(f"Server flag: {server_flag}")
-            print(f"Resposta: {resposta_ascii}")
-
-            # Para protocolo 15, pode não precisar salvar no CSV ou pode ter um tratamento específico
-            # Mantenha a lógica original ou adicione tratamento se necessário
+            # print("Ack comando")
+            # Protocolo 15 não salva, apenas retorna None
+            return None
 
         else:   
             print(f"Protocolo {protocol_number} ainda não implementado.")
